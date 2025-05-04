@@ -1,0 +1,303 @@
+\doxysection{ui\+\_\+mainwindow.\+h}
+\hypertarget{ui__mainwindow_8h_source}{}\label{ui__mainwindow_8h_source}\index{build/Desktop\_Qt\_6\_7\_3\_MinGW\_64\_bit-\/Debug/AirQualityMonitoring\_autogen/include/ui\_mainwindow.h@{build/Desktop\_Qt\_6\_7\_3\_MinGW\_64\_bit-\/Debug/AirQualityMonitoring\_autogen/include/ui\_mainwindow.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/********************************************************************************}}
+\DoxyCodeLine{00002\ \textcolor{comment}{**\ Form\ generated\ from\ reading\ UI\ file\ 'mainwindow.ui'}}
+\DoxyCodeLine{00003\ \textcolor{comment}{**}}
+\DoxyCodeLine{00004\ \textcolor{comment}{**\ Created\ by:\ Qt\ User\ Interface\ Compiler\ version\ 6.7.3}}
+\DoxyCodeLine{00005\ \textcolor{comment}{**}}
+\DoxyCodeLine{00006\ \textcolor{comment}{**\ WARNING!\ All\ changes\ made\ in\ this\ file\ will\ be\ lost\ when\ recompiling\ UI\ file!}}
+\DoxyCodeLine{00007\ \textcolor{comment}{********************************************************************************/}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#ifndef\ UI\_MAINWINDOW\_H}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#define\ UI\_MAINWINDOW\_H}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <QtCharts/QChartView>}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <QtCore/QVariant>}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ <QtWidgets/QApplication>}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ <QtWidgets/QGridLayout>}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ <QtWidgets/QHBoxLayout>}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#include\ <QtWidgets/QLabel>}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#include\ <QtWidgets/QLineEdit>}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#include\ <QtWidgets/QListWidget>}}
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#include\ <QtWidgets/QMainWindow>}}
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\#include\ <QtWidgets/QMenuBar>}}
+\DoxyCodeLine{00022\ \textcolor{preprocessor}{\#include\ <QtWidgets/QPushButton>}}
+\DoxyCodeLine{00023\ \textcolor{preprocessor}{\#include\ <QtWidgets/QStatusBar>}}
+\DoxyCodeLine{00024\ \textcolor{preprocessor}{\#include\ <QtWidgets/QTextEdit>}}
+\DoxyCodeLine{00025\ \textcolor{preprocessor}{\#include\ <QtWidgets/QVBoxLayout>}}
+\DoxyCodeLine{00026\ \textcolor{preprocessor}{\#include\ <QtWidgets/QWidget>}}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ QT\_BEGIN\_NAMESPACE}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_ui__main_window}{Ui\_mainWindow}}}
+\DoxyCodeLine{00031\ \{}
+\DoxyCodeLine{00032\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00033\ \ \ \ \ QWidget\ *centralwidget;}
+\DoxyCodeLine{00034\ \ \ \ \ QGridLayout\ *gridLayout;}
+\DoxyCodeLine{00035\ \ \ \ \ QChartView\ *chartView;}
+\DoxyCodeLine{00036\ \ \ \ \ QHBoxLayout\ *horizontalLayout;}
+\DoxyCodeLine{00037\ \ \ \ \ QPushButton\ *loadDataButton;}
+\DoxyCodeLine{00038\ \ \ \ \ QPushButton\ *saveDataButton;}
+\DoxyCodeLine{00039\ \ \ \ \ QVBoxLayout\ *verticalLayout\_4;}
+\DoxyCodeLine{00040\ \ \ \ \ QLabel\ *label;}
+\DoxyCodeLine{00041\ \ \ \ \ QTextEdit\ *measurementDataTextEdit;}
+\DoxyCodeLine{00042\ \ \ \ \ QVBoxLayout\ *verticalLayout\_2;}
+\DoxyCodeLine{00043\ \ \ \ \ QLabel\ *label\_2;}
+\DoxyCodeLine{00044\ \ \ \ \ QListWidget\ *sensorsListWidget;}
+\DoxyCodeLine{00045\ \ \ \ \ QVBoxLayout\ *verticalLayout\_3;}
+\DoxyCodeLine{00046\ \ \ \ \ QPushButton\ *analyzeButton;}
+\DoxyCodeLine{00047\ \ \ \ \ QTextEdit\ *analysisResultsTextEdit;}
+\DoxyCodeLine{00048\ \ \ \ \ QVBoxLayout\ *verticalLayout;}
+\DoxyCodeLine{00049\ \ \ \ \ QPushButton\ *fetchStationsButton;}
+\DoxyCodeLine{00050\ \ \ \ \ QLineEdit\ *cityFilterLineEdit;}
+\DoxyCodeLine{00051\ \ \ \ \ QListWidget\ *listWidget;}
+\DoxyCodeLine{00052\ \ \ \ \ QMenuBar\ *menubar;}
+\DoxyCodeLine{00053\ \ \ \ \ QStatusBar\ *statusbar;}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{keywordtype}{void}\ setupUi(QMainWindow\ *\mbox{\hyperlink{classmain_window}{mainWindow}})}
+\DoxyCodeLine{00056\ \ \ \ \ \{}
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classmain_window}{mainWindow}}-\/>objectName().isEmpty())}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classmain_window}{mainWindow}}-\/>setObjectName(\textcolor{stringliteral}{"{}mainWindow"{}});}
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classmain_window}{mainWindow}}-\/>setStyleSheet(QString::fromUtf8(\textcolor{stringliteral}{"{}/*\ -\/-\/-\/\ Styl\ dla\ G\(\backslash\)305\(\backslash\)202\(\backslash\)303\(\backslash\)263wnego\ Okna\ (T\(\backslash\)305\(\backslash\)202o)\ -\/-\/-\/\ */\(\backslash\)n"{}}}
+\DoxyCodeLine{00060\ \textcolor{stringliteral}{"{}QMainWindow\ \{\(\backslash\)n"{}}}
+\DoxyCodeLine{00061\ \textcolor{stringliteral}{"{}\ \ \ \ background-\/color:\ \#5e3c75;\ \(\backslash\)n"{}}}
+\DoxyCodeLine{00062\ \textcolor{stringliteral}{"{}\}\(\backslash\)n"{}}}
+\DoxyCodeLine{00063\ \textcolor{stringliteral}{"{}\(\backslash\)n"{}}}
+\DoxyCodeLine{00064\ \textcolor{stringliteral}{"{}/*\ -\/-\/-\/\ Styl\ dla\ Centralnego\ Widgetu\ -\/-\/-\/\ */\(\backslash\)n"{}}}
+\DoxyCodeLine{00065\ \textcolor{stringliteral}{"{}QWidget\#centralwidget\ \{\(\backslash\)n"{}}}
+\DoxyCodeLine{00066\ \textcolor{stringliteral}{"{}\ \ \ \ background-\/color:\ \#e6d8f3;\ \ \(\backslash\)n"{}}}
+\DoxyCodeLine{00067\ \textcolor{stringliteral}{"{}\}\(\backslash\)n"{}}}
+\DoxyCodeLine{00068\ \textcolor{stringliteral}{"{}\(\backslash\)n"{}}}
+\DoxyCodeLine{00069\ \textcolor{stringliteral}{"{}/*\ -\/-\/-\/\ Styl\ dla\ Przycisk\(\backslash\)303\(\backslash\)263w\ -\/-\/-\/\ */\(\backslash\)n"{}}}
+\DoxyCodeLine{00070\ \textcolor{stringliteral}{"{}QPushButton\ \{\(\backslash\)n"{}}}
+\DoxyCodeLine{00071\ \textcolor{stringliteral}{"{}\ \ \ \ background-\/color:\ \#a86dbf;\ \ \(\backslash\)n"{}}}
+\DoxyCodeLine{00072\ \textcolor{stringliteral}{"{}\ \ \ \ color:\ \#ffffff;\(\backslash\)n"{}}}
+\DoxyCodeLine{00073\ \textcolor{stringliteral}{"{}\ \ \ \ border:\ 2px\ solid\ \#50325d;\ \(\backslash\)n"{}}}
+\DoxyCodeLine{00074\ \textcolor{stringliteral}{"{}\ \ \ \ border-\/radius:\ 8px;\(\backslash\)n"{}}}
+\DoxyCodeLine{00075\ \textcolor{stringliteral}{"{}\ \ \ \ padding:\ 5px\ 10px;\(\backslash\)n"{}}}
+\DoxyCodeLine{00076\ \textcolor{stringliteral}{"{}\ \ \ \ font-\/weight:\ bold;\(\backslash\)n"{}}}
+\DoxyCodeLine{00077\ \textcolor{stringliteral}{"{}\ \ \ \ font-\/family:\ \(\backslash\)"{}Verdana\(\backslash\)"{},\ Arial,\ sans-\/serif;\(\backslash\)n"{}}}
+\DoxyCodeLine{00078\ \textcolor{stringliteral}{"{}\}\(\backslash\)n"{}}}
+\DoxyCodeLine{00079\ \textcolor{stringliteral}{"{}\(\backslash\)n"{}}}
+\DoxyCodeLine{00080\ \textcolor{stringliteral}{"{}QPushButton:hover\ \{\(\backslash\)n"{}}}
+\DoxyCodeLine{00081\ \textcolor{stringliteral}{"{}\ \ \ \ background-\/color:\ \#6e4e93;\ \(\backslash\)n"{}}}
+\DoxyCodeLine{00082\ \textcolor{stringliteral}{"{}\ \ \ \ border-\/color:\ \#3f2b57;\ \ \ \ \(\backslash\)n"{}}}
+\DoxyCodeLine{00083\ \textcolor{stringliteral}{"{}\}\(\backslash\)n"{}}}
+\DoxyCodeLine{00084\ \textcolor{stringliteral}{"{}\(\backslash\)n"{}}}
+\DoxyCodeLine{00085\ \textcolor{stringliteral}{"{}QPushButton:pressed\ \{\(\backslash\)n"{}}}
+\DoxyCodeLine{00086\ \textcolor{stringliteral}{"{}\ \ \ \ background-\/color:\ \#50325d;\ \(\backslash\)n"{}}}
+\DoxyCodeLine{00087\ \textcolor{stringliteral}{"{}\ \ \ \ border-\/style:\ inset;\(\backslash\)n"{}}}
+\DoxyCodeLine{00088\ \textcolor{stringliteral}{"{}\ \ \ \ border-\/color:\ \#3a2247;\(\backslash\)n"{}}}
+\DoxyCodeLine{00089\ \textcolor{stringliteral}{"{}\}\(\backslash\)n"{}}}
+\DoxyCodeLine{00090\ \textcolor{stringliteral}{"{}\(\backslash\)n"{}}}
+\DoxyCodeLine{00091\ \textcolor{stringliteral}{"{}QPushButton:disabled\ \{\(\backslash\)n"{}}}
+\DoxyCodeLine{00092\ \textcolor{stringliteral}{"{}\ \ \ \ background-\/color:\ \#a6b4e2;\ \(\backslash\)n"{}}}
+\DoxyCodeLine{00093\ \textcolor{stringliteral}{"{}\ \ \ \ color:\ \#e7d8f3;\(\backslash\)n"{}}}
+\DoxyCodeLine{00094\ \textcolor{stringliteral}{"{}\ \ \ \ border-\/color:\ \#b0c4de;\(\backslash\)n"{}}}
+\DoxyCodeLine{00095\ \textcolor{stringliteral}{"{}\}\(\backslash\)n"{}}}
+\DoxyCodeLine{00096\ \textcolor{stringliteral}{"{}\(\backslash\)n"{}}}
+\DoxyCodeLine{00097\ \textcolor{stringliteral}{"{}/*\ -\/-\/-\/\ Styl\ dla\ Etykiet\ Tekstowych\ -\/-\/-\/\ */\(\backslash\)n"{}}}
+\DoxyCodeLine{00098\ \textcolor{stringliteral}{"{}QLabel\ \{\(\backslash\)n"{}}}
+\DoxyCodeLine{00099\ \textcolor{stringliteral}{"{}\ \ \ \ color:\ \#50325d;\ \(\backslash\)n"{}}}
+\DoxyCodeLine{00100\ \textcolor{stringliteral}{"{}\ \ \ \ font-\/we"{}}}
+\DoxyCodeLine{00101\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}ight:\ bold;\(\backslash\)n"{}}}
+\DoxyCodeLine{00102\ \textcolor{stringliteral}{"{}\ \ \ \ font-\/size:\ 10pt;\(\backslash\)n"{}}}
+\DoxyCodeLine{00103\ \textcolor{stringliteral}{"{}\ \ \ \ padding:\ 2px;\(\backslash\)n"{}}}
+\DoxyCodeLine{00104\ \textcolor{stringliteral}{"{}\ \ \ font-\/family:\ \(\backslash\)"{}Verdana\(\backslash\)"{},\ Arial,\ sans-\/serif;\(\backslash\)n"{}}}
+\DoxyCodeLine{00105\ \textcolor{stringliteral}{"{}\ \ \ \ qproperty-\/alignment:\ 'AlignCenter';\(\backslash\)n"{}}}
+\DoxyCodeLine{00106\ \textcolor{stringliteral}{"{}\}\(\backslash\)n"{}}}
+\DoxyCodeLine{00107\ \textcolor{stringliteral}{"{}\(\backslash\)n"{}}}
+\DoxyCodeLine{00108\ \textcolor{stringliteral}{"{}/*\ -\/-\/-\/\ Styl\ dla\ Konkretnych\ Etykiet\ -\/-\/-\/\ */\(\backslash\)n"{}}}
+\DoxyCodeLine{00109\ \textcolor{stringliteral}{"{}QLabel\#analysisResultsLabel\ \{\(\backslash\)n"{}}}
+\DoxyCodeLine{00110\ \textcolor{stringliteral}{"{}\ \ \ \ color:\ \#50325d;\(\backslash\)n"{}}}
+\DoxyCodeLine{00111\ \textcolor{stringliteral}{"{}\ \ \ \ font-\/weight:\ normal;\(\backslash\)n"{}}}
+\DoxyCodeLine{00112\ \textcolor{stringliteral}{"{}\ \ \ \ font-\/size:\ 9pt;\(\backslash\)n"{}}}
+\DoxyCodeLine{00113\ \textcolor{stringliteral}{"{}\ \ \ \ border:\ 1px\ solid\ \#8966b1;\(\backslash\)n"{}}}
+\DoxyCodeLine{00114\ \textcolor{stringliteral}{"{}\ \ \ \ background-\/color:\ \#f2f8fd;\(\backslash\)n"{}}}
+\DoxyCodeLine{00115\ \textcolor{stringliteral}{"{}\ \ \ \ padding:\ 5px;\(\backslash\)n"{}}}
+\DoxyCodeLine{00116\ \textcolor{stringliteral}{"{}\}\(\backslash\)n"{}}}
+\DoxyCodeLine{00117\ \textcolor{stringliteral}{"{}\(\backslash\)n"{}}}
+\DoxyCodeLine{00118\ \textcolor{stringliteral}{"{}/*\ -\/-\/-\/\ Styl\ dla\ Pola\ Wprowadzania\ (Filtra)\ -\/-\/-\/\ */\(\backslash\)n"{}}}
+\DoxyCodeLine{00119\ \textcolor{stringliteral}{"{}QLineEdit\ \{\(\backslash\)n"{}}}
+\DoxyCodeLine{00120\ \textcolor{stringliteral}{"{}\ \ \ \ border:\ 1px\ solid\ \#8966b1;\(\backslash\)n"{}}}
+\DoxyCodeLine{00121\ \textcolor{stringliteral}{"{}\ \ \ \ border-\/radius:\ 5px;\(\backslash\)n"{}}}
+\DoxyCodeLine{00122\ \textcolor{stringliteral}{"{}\ \ \ \ padding:\ 3px\ 5px;\ \(\backslash\)n"{}}}
+\DoxyCodeLine{00123\ \textcolor{stringliteral}{"{}\ \ \ \ background-\/color:\ \#f4f9fd;\(\backslash\)n"{}}}
+\DoxyCodeLine{00124\ \textcolor{stringliteral}{"{}\ \ \ \ font-\/family:\ \(\backslash\)"{}Verdana\(\backslash\)"{},\ Arial,\ sans-\/serif;\(\backslash\)n"{}}}
+\DoxyCodeLine{00125\ \textcolor{stringliteral}{"{}\ \ \ \ font-\/size:\ 10pt;\(\backslash\)n"{}}}
+\DoxyCodeLine{00126\ \textcolor{stringliteral}{"{}\ \ \ \ color:\ \#50325d;\(\backslash\)n"{}}}
+\DoxyCodeLine{00127\ \textcolor{stringliteral}{"{}\ \ \ \ font-\/weight:\ bold;\(\backslash\)n"{}}}
+\DoxyCodeLine{00128\ \textcolor{stringliteral}{"{}\}\(\backslash\)n"{}}}
+\DoxyCodeLine{00129\ \textcolor{stringliteral}{"{}\(\backslash\)n"{}}}
+\DoxyCodeLine{00130\ \textcolor{stringliteral}{"{}QLineEdit:focus\ \{\(\backslash\)n"{}}}
+\DoxyCodeLine{00131\ \textcolor{stringliteral}{"{}\ \ \ \ border-\/color:\ \#50325d;\(\backslash\)n"{}}}
+\DoxyCodeLine{00132\ \textcolor{stringliteral}{"{}\}\(\backslash\)n"{}}}
+\DoxyCodeLine{00133\ \textcolor{stringliteral}{"{}\(\backslash\)n"{}}}
+\DoxyCodeLine{00134\ \textcolor{stringliteral}{"{}/*\ -\/-\/-\/\ Styl\ dla\ List\ -\/-\/-\/\ */\(\backslash\)n"{}}}
+\DoxyCodeLine{00135\ \textcolor{stringliteral}{"{}QListWidget\ \{\(\backslash\)n"{}}}
+\DoxyCodeLine{00136\ \textcolor{stringliteral}{"{}\ \ \ \ border:\ 1px\ solid\ \#8966b1;\(\backslash\)n"{}}}
+\DoxyCodeLine{00137\ \textcolor{stringliteral}{"{}\ \ \ \ background-\/color:\ \#ffffff;\(\backslash\)n"{}}}
+\DoxyCodeLine{00138\ \textcolor{stringliteral}{"{}\ \ \ \ font-\/size:\ 10pt;\(\backslash\)n"{}}}
+\DoxyCodeLine{00139\ \textcolor{stringliteral}{"{}\ \ \ \ color:\ \#50325d;\(\backslash\)n"{}}}
+\DoxyCodeLine{00140\ \textcolor{stringliteral}{"{}\ \ \ font-\/family:\ \(\backslash\)"{}Verdana\(\backslash\)"{},\ A"{}}}
+\DoxyCodeLine{00141\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}rial,\ sans-\/serif;\(\backslash\)n"{}}}
+\DoxyCodeLine{00142\ \textcolor{stringliteral}{"{}\}\(\backslash\)n"{}}}
+\DoxyCodeLine{00143\ \textcolor{stringliteral}{"{}\(\backslash\)n"{}}}
+\DoxyCodeLine{00144\ \textcolor{stringliteral}{"{}/*\ -\/-\/-\/\ Styl\ dla\ P\(\backslash\)303\(\backslash\)263l\ Tekstowych\ (Wyniki,\ Dane)\ -\/-\/-\/\ */\(\backslash\)n"{}}}
+\DoxyCodeLine{00145\ \textcolor{stringliteral}{"{}QTextEdit\ \{\(\backslash\)n"{}}}
+\DoxyCodeLine{00146\ \textcolor{stringliteral}{"{}\ \ \ \ border:\ 1px\ solid\ \#8966b1;\(\backslash\)n"{}}}
+\DoxyCodeLine{00147\ \textcolor{stringliteral}{"{}\ \ \ \ background-\/color:\ \#ffffff;\(\backslash\)n"{}}}
+\DoxyCodeLine{00148\ \textcolor{stringliteral}{"{}\ \ \ \ font-\/family:\ \(\backslash\)"{}Verdana\(\backslash\)"{},\ Arial,\ sans-\/serif;\(\backslash\)n"{}}}
+\DoxyCodeLine{00149\ \textcolor{stringliteral}{"{}\ \ \ \ font-\/size:\ 9pt;\(\backslash\)n"{}}}
+\DoxyCodeLine{00150\ \textcolor{stringliteral}{"{}\ \ \ \ color:\ \#50325d;\(\backslash\)n"{}}}
+\DoxyCodeLine{00151\ \textcolor{stringliteral}{"{}\}\(\backslash\)n"{}}}
+\DoxyCodeLine{00152\ \textcolor{stringliteral}{"{}\(\backslash\)n"{}}}
+\DoxyCodeLine{00153\ \textcolor{stringliteral}{"{}/*\ -\/-\/-\/\ Styl\ dla\ Wykresu\ (Usuni\(\backslash\)304\(\backslash\)231cie\ Ramki)\ -\/-\/-\/\ */\(\backslash\)n"{}}}
+\DoxyCodeLine{00154\ \textcolor{stringliteral}{"{}QChartView\ \{\(\backslash\)n"{}}}
+\DoxyCodeLine{00155\ \textcolor{stringliteral}{"{}\ \ \ \ border:\ none;\ \(\backslash\)n"{}}}
+\DoxyCodeLine{00156\ \textcolor{stringliteral}{"{}\ \ \ \ background-\/color:\ \#ffffff;\(\backslash\)n"{}}}
+\DoxyCodeLine{00157\ \textcolor{stringliteral}{"{}\}\(\backslash\)n"{}}}
+\DoxyCodeLine{00158\ \textcolor{stringliteral}{"{}\(\backslash\)n"{}}}
+\DoxyCodeLine{00159\ \textcolor{stringliteral}{"{}/*\ -\/-\/-\/\ Styl\ dla\ Paska\ Statusu\ (Opcjonalnie)\ -\/-\/-\/\ */\(\backslash\)n"{}}}
+\DoxyCodeLine{00160\ \textcolor{stringliteral}{"{}QStatusBar\ \{\(\backslash\)n"{}}}
+\DoxyCodeLine{00161\ \textcolor{stringliteral}{"{}\ \ \ \ background-\/color:\ \#50325d;\(\backslash\)n"{}}}
+\DoxyCodeLine{00162\ \textcolor{stringliteral}{"{}\ \ \ \ color:\ \#f4f4f4;\(\backslash\)n"{}}}
+\DoxyCodeLine{00163\ \textcolor{stringliteral}{"{}\ \ \ \ font-\/family:\ \(\backslash\)"{}Verdana\(\backslash\)"{},\ Arial,\ sans-\/serif;\(\backslash\)n"{}}}
+\DoxyCodeLine{00164\ \textcolor{stringliteral}{"{}\}\(\backslash\)n"{}}}
+\DoxyCodeLine{00165\ \textcolor{stringliteral}{"{}"{}}));}
+\DoxyCodeLine{00166\ \ \ \ \ \ \ \ \ centralwidget\ =\ \textcolor{keyword}{new}\ QWidget(\mbox{\hyperlink{classmain_window}{mainWindow}});}
+\DoxyCodeLine{00167\ \ \ \ \ \ \ \ \ centralwidget-\/>setObjectName(\textcolor{stringliteral}{"{}centralwidget"{}});}
+\DoxyCodeLine{00168\ \ \ \ \ \ \ \ \ gridLayout\ =\ \textcolor{keyword}{new}\ QGridLayout(centralwidget);}
+\DoxyCodeLine{00169\ \ \ \ \ \ \ \ \ gridLayout-\/>setObjectName(\textcolor{stringliteral}{"{}gridLayout"{}});}
+\DoxyCodeLine{00170\ \ \ \ \ \ \ \ \ chartView\ =\ \textcolor{keyword}{new}\ QChartView(centralwidget);}
+\DoxyCodeLine{00171\ \ \ \ \ \ \ \ \ chartView-\/>setObjectName(\textcolor{stringliteral}{"{}chartView"{}});}
+\DoxyCodeLine{00172\ \ \ \ \ \ \ \ \ QSizePolicy\ sizePolicy(QSizePolicy::Policy::Expanding,\ QSizePolicy::Policy::Expanding);}
+\DoxyCodeLine{00173\ \ \ \ \ \ \ \ \ sizePolicy.setHorizontalStretch(0);}
+\DoxyCodeLine{00174\ \ \ \ \ \ \ \ \ sizePolicy.setVerticalStretch(0);}
+\DoxyCodeLine{00175\ \ \ \ \ \ \ \ \ sizePolicy.setHeightForWidth(chartView-\/>sizePolicy().hasHeightForWidth());}
+\DoxyCodeLine{00176\ \ \ \ \ \ \ \ \ chartView-\/>setSizePolicy(sizePolicy);}
+\DoxyCodeLine{00177\ }
+\DoxyCodeLine{00178\ \ \ \ \ \ \ \ \ gridLayout-\/>addWidget(chartView,\ 2,\ 0,\ 1,\ 4);}
+\DoxyCodeLine{00179\ }
+\DoxyCodeLine{00180\ \ \ \ \ \ \ \ \ horizontalLayout\ =\ \textcolor{keyword}{new}\ QHBoxLayout();}
+\DoxyCodeLine{00181\ \ \ \ \ \ \ \ \ horizontalLayout-\/>setObjectName(\textcolor{stringliteral}{"{}horizontalLayout"{}});}
+\DoxyCodeLine{00182\ \ \ \ \ \ \ \ \ loadDataButton\ =\ \textcolor{keyword}{new}\ QPushButton(centralwidget);}
+\DoxyCodeLine{00183\ \ \ \ \ \ \ \ \ loadDataButton-\/>setObjectName(\textcolor{stringliteral}{"{}loadDataButton"{}});}
+\DoxyCodeLine{00184\ }
+\DoxyCodeLine{00185\ \ \ \ \ \ \ \ \ horizontalLayout-\/>addWidget(loadDataButton);}
+\DoxyCodeLine{00186\ }
+\DoxyCodeLine{00187\ \ \ \ \ \ \ \ \ saveDataButton\ =\ \textcolor{keyword}{new}\ QPushButton(centralwidget);}
+\DoxyCodeLine{00188\ \ \ \ \ \ \ \ \ saveDataButton-\/>setObjectName(\textcolor{stringliteral}{"{}saveDataButton"{}});}
+\DoxyCodeLine{00189\ }
+\DoxyCodeLine{00190\ \ \ \ \ \ \ \ \ horizontalLayout-\/>addWidget(saveDataButton);}
+\DoxyCodeLine{00191\ }
+\DoxyCodeLine{00192\ }
+\DoxyCodeLine{00193\ \ \ \ \ \ \ \ \ gridLayout-\/>addLayout(horizontalLayout,\ 0,\ 1,\ 1,\ 2);}
+\DoxyCodeLine{00194\ }
+\DoxyCodeLine{00195\ \ \ \ \ \ \ \ \ verticalLayout\_4\ =\ \textcolor{keyword}{new}\ QVBoxLayout();}
+\DoxyCodeLine{00196\ \ \ \ \ \ \ \ \ verticalLayout\_4-\/>setObjectName(\textcolor{stringliteral}{"{}verticalLayout\_4"{}});}
+\DoxyCodeLine{00197\ \ \ \ \ \ \ \ \ label\ =\ \textcolor{keyword}{new}\ QLabel(centralwidget);}
+\DoxyCodeLine{00198\ \ \ \ \ \ \ \ \ label-\/>setObjectName(\textcolor{stringliteral}{"{}label"{}});}
+\DoxyCodeLine{00199\ }
+\DoxyCodeLine{00200\ \ \ \ \ \ \ \ \ verticalLayout\_4-\/>addWidget(label);}
+\DoxyCodeLine{00201\ }
+\DoxyCodeLine{00202\ \ \ \ \ \ \ \ \ measurementDataTextEdit\ =\ \textcolor{keyword}{new}\ QTextEdit(centralwidget);}
+\DoxyCodeLine{00203\ \ \ \ \ \ \ \ \ measurementDataTextEdit-\/>setObjectName(\textcolor{stringliteral}{"{}measurementDataTextEdit"{}});}
+\DoxyCodeLine{00204\ \ \ \ \ \ \ \ \ measurementDataTextEdit-\/>setReadOnly(\textcolor{keyword}{true});}
+\DoxyCodeLine{00205\ }
+\DoxyCodeLine{00206\ \ \ \ \ \ \ \ \ verticalLayout\_4-\/>addWidget(measurementDataTextEdit);}
+\DoxyCodeLine{00207\ }
+\DoxyCodeLine{00208\ }
+\DoxyCodeLine{00209\ \ \ \ \ \ \ \ \ gridLayout-\/>addLayout(verticalLayout\_4,\ 1,\ 2,\ 1,\ 1);}
+\DoxyCodeLine{00210\ }
+\DoxyCodeLine{00211\ \ \ \ \ \ \ \ \ verticalLayout\_2\ =\ \textcolor{keyword}{new}\ QVBoxLayout();}
+\DoxyCodeLine{00212\ \ \ \ \ \ \ \ \ verticalLayout\_2-\/>setObjectName(\textcolor{stringliteral}{"{}verticalLayout\_2"{}});}
+\DoxyCodeLine{00213\ \ \ \ \ \ \ \ \ label\_2\ =\ \textcolor{keyword}{new}\ QLabel(centralwidget);}
+\DoxyCodeLine{00214\ \ \ \ \ \ \ \ \ label\_2-\/>setObjectName(\textcolor{stringliteral}{"{}label\_2"{}});}
+\DoxyCodeLine{00215\ }
+\DoxyCodeLine{00216\ \ \ \ \ \ \ \ \ verticalLayout\_2-\/>addWidget(label\_2);}
+\DoxyCodeLine{00217\ }
+\DoxyCodeLine{00218\ \ \ \ \ \ \ \ \ sensorsListWidget\ =\ \textcolor{keyword}{new}\ QListWidget(centralwidget);}
+\DoxyCodeLine{00219\ \ \ \ \ \ \ \ \ sensorsListWidget-\/>setObjectName(\textcolor{stringliteral}{"{}sensorsListWidget"{}});}
+\DoxyCodeLine{00220\ }
+\DoxyCodeLine{00221\ \ \ \ \ \ \ \ \ verticalLayout\_2-\/>addWidget(sensorsListWidget);}
+\DoxyCodeLine{00222\ }
+\DoxyCodeLine{00223\ }
+\DoxyCodeLine{00224\ \ \ \ \ \ \ \ \ gridLayout-\/>addLayout(verticalLayout\_2,\ 1,\ 1,\ 1,\ 1);}
+\DoxyCodeLine{00225\ }
+\DoxyCodeLine{00226\ \ \ \ \ \ \ \ \ verticalLayout\_3\ =\ \textcolor{keyword}{new}\ QVBoxLayout();}
+\DoxyCodeLine{00227\ \ \ \ \ \ \ \ \ verticalLayout\_3-\/>setObjectName(\textcolor{stringliteral}{"{}verticalLayout\_3"{}});}
+\DoxyCodeLine{00228\ \ \ \ \ \ \ \ \ analyzeButton\ =\ \textcolor{keyword}{new}\ QPushButton(centralwidget);}
+\DoxyCodeLine{00229\ \ \ \ \ \ \ \ \ analyzeButton-\/>setObjectName(\textcolor{stringliteral}{"{}analyzeButton"{}});}
+\DoxyCodeLine{00230\ }
+\DoxyCodeLine{00231\ \ \ \ \ \ \ \ \ verticalLayout\_3-\/>addWidget(analyzeButton);}
+\DoxyCodeLine{00232\ }
+\DoxyCodeLine{00233\ \ \ \ \ \ \ \ \ analysisResultsTextEdit\ =\ \textcolor{keyword}{new}\ QTextEdit(centralwidget);}
+\DoxyCodeLine{00234\ \ \ \ \ \ \ \ \ analysisResultsTextEdit-\/>setObjectName(\textcolor{stringliteral}{"{}analysisResultsTextEdit"{}});}
+\DoxyCodeLine{00235\ \ \ \ \ \ \ \ \ analysisResultsTextEdit-\/>setContextMenuPolicy(Qt::ContextMenuPolicy::NoContextMenu);}
+\DoxyCodeLine{00236\ \ \ \ \ \ \ \ \ analysisResultsTextEdit-\/>setReadOnly(\textcolor{keyword}{true});}
+\DoxyCodeLine{00237\ }
+\DoxyCodeLine{00238\ \ \ \ \ \ \ \ \ verticalLayout\_3-\/>addWidget(analysisResultsTextEdit);}
+\DoxyCodeLine{00239\ }
+\DoxyCodeLine{00240\ }
+\DoxyCodeLine{00241\ \ \ \ \ \ \ \ \ gridLayout-\/>addLayout(verticalLayout\_3,\ 0,\ 3,\ 2,\ 1);}
+\DoxyCodeLine{00242\ }
+\DoxyCodeLine{00243\ \ \ \ \ \ \ \ \ verticalLayout\ =\ \textcolor{keyword}{new}\ QVBoxLayout();}
+\DoxyCodeLine{00244\ \ \ \ \ \ \ \ \ verticalLayout-\/>setObjectName(\textcolor{stringliteral}{"{}verticalLayout"{}});}
+\DoxyCodeLine{00245\ \ \ \ \ \ \ \ \ fetchStationsButton\ =\ \textcolor{keyword}{new}\ QPushButton(centralwidget);}
+\DoxyCodeLine{00246\ \ \ \ \ \ \ \ \ fetchStationsButton-\/>setObjectName(\textcolor{stringliteral}{"{}fetchStationsButton"{}});}
+\DoxyCodeLine{00247\ }
+\DoxyCodeLine{00248\ \ \ \ \ \ \ \ \ verticalLayout-\/>addWidget(fetchStationsButton);}
+\DoxyCodeLine{00249\ }
+\DoxyCodeLine{00250\ \ \ \ \ \ \ \ \ cityFilterLineEdit\ =\ \textcolor{keyword}{new}\ QLineEdit(centralwidget);}
+\DoxyCodeLine{00251\ \ \ \ \ \ \ \ \ cityFilterLineEdit-\/>setObjectName(\textcolor{stringliteral}{"{}cityFilterLineEdit"{}});}
+\DoxyCodeLine{00252\ }
+\DoxyCodeLine{00253\ \ \ \ \ \ \ \ \ verticalLayout-\/>addWidget(cityFilterLineEdit);}
+\DoxyCodeLine{00254\ }
+\DoxyCodeLine{00255\ \ \ \ \ \ \ \ \ listWidget\ =\ \textcolor{keyword}{new}\ QListWidget(centralwidget);}
+\DoxyCodeLine{00256\ \ \ \ \ \ \ \ \ listWidget-\/>setObjectName(\textcolor{stringliteral}{"{}listWidget"{}});}
+\DoxyCodeLine{00257\ }
+\DoxyCodeLine{00258\ \ \ \ \ \ \ \ \ verticalLayout-\/>addWidget(listWidget);}
+\DoxyCodeLine{00259\ }
+\DoxyCodeLine{00260\ }
+\DoxyCodeLine{00261\ \ \ \ \ \ \ \ \ gridLayout-\/>addLayout(verticalLayout,\ 0,\ 0,\ 2,\ 1);}
+\DoxyCodeLine{00262\ }
+\DoxyCodeLine{00263\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classmain_window}{mainWindow}}-\/>setCentralWidget(centralwidget);}
+\DoxyCodeLine{00264\ \ \ \ \ \ \ \ \ menubar\ =\ \textcolor{keyword}{new}\ QMenuBar(\mbox{\hyperlink{classmain_window}{mainWindow}});}
+\DoxyCodeLine{00265\ \ \ \ \ \ \ \ \ menubar-\/>setObjectName(\textcolor{stringliteral}{"{}menubar"{}});}
+\DoxyCodeLine{00266\ \ \ \ \ \ \ \ \ menubar-\/>setGeometry(QRect(0,\ 0,\ 1048,\ 17));}
+\DoxyCodeLine{00267\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classmain_window}{mainWindow}}-\/>setMenuBar(menubar);}
+\DoxyCodeLine{00268\ \ \ \ \ \ \ \ \ statusbar\ =\ \textcolor{keyword}{new}\ QStatusBar(\mbox{\hyperlink{classmain_window}{mainWindow}});}
+\DoxyCodeLine{00269\ \ \ \ \ \ \ \ \ statusbar-\/>setObjectName(\textcolor{stringliteral}{"{}statusbar"{}});}
+\DoxyCodeLine{00270\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classmain_window}{mainWindow}}-\/>setStatusBar(statusbar);}
+\DoxyCodeLine{00271\ }
+\DoxyCodeLine{00272\ \ \ \ \ \ \ \ \ retranslateUi(\mbox{\hyperlink{classmain_window}{mainWindow}});}
+\DoxyCodeLine{00273\ }
+\DoxyCodeLine{00274\ \ \ \ \ \ \ \ \ QMetaObject::connectSlotsByName(\mbox{\hyperlink{classmain_window}{mainWindow}});}
+\DoxyCodeLine{00275\ \ \ \ \ \}\ \textcolor{comment}{//\ setupUi}}
+\DoxyCodeLine{00276\ }
+\DoxyCodeLine{00277\ \ \ \ \ \textcolor{keywordtype}{void}\ retranslateUi(QMainWindow\ *\mbox{\hyperlink{classmain_window}{mainWindow}})}
+\DoxyCodeLine{00278\ \ \ \ \ \{}
+\DoxyCodeLine{00279\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classmain_window}{mainWindow}}-\/>setWindowTitle(QCoreApplication::translate(\textcolor{stringliteral}{"{}mainWindow"{}},\ \textcolor{stringliteral}{"{}MainWindow"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00280\ \ \ \ \ \ \ \ \ loadDataButton-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}mainWindow"{}},\ \textcolor{stringliteral}{"{}Wczytaj\ dane"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00281\ \ \ \ \ \ \ \ \ saveDataButton-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}mainWindow"{}},\ \textcolor{stringliteral}{"{}Zapisz\ dane"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00282\ \ \ \ \ \ \ \ \ label-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}mainWindow"{}},\ \textcolor{stringliteral}{"{}Dane\ pomiarowe"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00283\ \ \ \ \ \ \ \ \ label\_2-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}mainWindow"{}},\ \textcolor{stringliteral}{"{}Dost\(\backslash\)304\(\backslash\)231pne\ sensory"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00284\ \ \ \ \ \ \ \ \ analyzeButton-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}mainWindow"{}},\ \textcolor{stringliteral}{"{}Analizuj\ dane"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00285\ \ \ \ \ \ \ \ \ fetchStationsButton-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}mainWindow"{}},\ \textcolor{stringliteral}{"{}Pobierz\ stacje"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00286\ \ \ \ \ \ \ \ \ cityFilterLineEdit-\/>setPlaceholderText(QCoreApplication::translate(\textcolor{stringliteral}{"{}mainWindow"{}},\ \textcolor{stringliteral}{"{}Wpisz\ miejscowo\(\backslash\)305\(\backslash\)233\(\backslash\)304\(\backslash\)207..."{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00287\ \ \ \ \ \}\ \textcolor{comment}{//\ retranslateUi}}
+\DoxyCodeLine{00288\ }
+\DoxyCodeLine{00289\ \};}
+\DoxyCodeLine{00290\ }
+\DoxyCodeLine{00291\ \textcolor{keyword}{namespace\ }Ui\ \{}
+\DoxyCodeLine{00292\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_ui_1_1main_window}{mainWindow}}:\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_ui__main_window}{Ui\_mainWindow}}\ \{\};}
+\DoxyCodeLine{00293\ \}\ \textcolor{comment}{//\ namespace\ Ui}}
+\DoxyCodeLine{00294\ }
+\DoxyCodeLine{00295\ QT\_END\_NAMESPACE}
+\DoxyCodeLine{00296\ }
+\DoxyCodeLine{00297\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ UI\_MAINWINDOW\_H}}
+
+\end{DoxyCode}

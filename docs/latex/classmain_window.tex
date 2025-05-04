@@ -1,0 +1,202 @@
+\doxysection{main\+Window Class Reference}
+\hypertarget{classmain_window}{}\label{classmain_window}\index{mainWindow@{mainWindow}}
+
+
+Główne okno aplikacji monitorującej jakość powietrza.  
+
+
+
+
+{\ttfamily \#include $<$mainwindow.\+h$>$}
+
+Inheritance diagram for main\+Window\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classmain_window}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmain_window_aeac52e1db2d23d399e59332dd291e1df}{main\+Window}} (QWidget \texorpdfstring{$\ast$}{*}parent=nullptr)
+\begin{DoxyCompactList}\small\item\em Konstruktor głównego okna. Inicjalizuje interfejs użytkownika z pliku .ui, tworzy obiekt \doxylink{class_gios_api_client}{Gios\+Api\+Client} i konfiguruje połączenia sygnał-\/slot. \end{DoxyCompactList}\item 
+\Hypertarget{classmain_window_a2c4caa71599521dbde5bc35b230ed648}\label{classmain_window_a2c4caa71599521dbde5bc35b230ed648} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}main\+Window} ()
+\begin{DoxyCompactList}\small\item\em Destruktor. Zwalnia obiekt interfejsu użytkownika. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Slots}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classmain_window_ac823659d60cc1012a296a46293524bf1}\label{classmain_window_ac823659d60cc1012a296a46293524bf1} 
+void {\bfseries on\+\_\+fetch\+Stations\+Button\+\_\+clicked} ()
+\begin{DoxyCompactList}\small\item\em Wywoływany po kliknięciu przycisku "{}\+Pobierz stacje"{} (fetch\+Stations\+Button). \end{DoxyCompactList}\item 
+\Hypertarget{classmain_window_a2b888bf2e9d2644c9d10abf280edcef9}\label{classmain_window_a2b888bf2e9d2644c9d10abf280edcef9} 
+void {\bfseries on\+\_\+list\+Widget\+\_\+item\+Clicked} (QList\+Widget\+Item \texorpdfstring{$\ast$}{*}item)
+\begin{DoxyCompactList}\small\item\em Wywoływany po kliknięciu elementu na liście stacji (list\+Widget). \end{DoxyCompactList}\item 
+\Hypertarget{classmain_window_af68b106b0de9ff9a97e3a87bceed9dd1}\label{classmain_window_af68b106b0de9ff9a97e3a87bceed9dd1} 
+void {\bfseries on\+\_\+sensors\+List\+Widget\+\_\+item\+Clicked} (QList\+Widget\+Item \texorpdfstring{$\ast$}{*}item)
+\begin{DoxyCompactList}\small\item\em Wywoływany po kliknięciu elementu na liście sensorów (sensors\+List\+Widget). \end{DoxyCompactList}\item 
+\Hypertarget{classmain_window_a3a0c92a00aab88d29e511296c2ad6704}\label{classmain_window_a3a0c92a00aab88d29e511296c2ad6704} 
+void {\bfseries on\+\_\+save\+Data\+Button\+\_\+clicked} ()
+\begin{DoxyCompactList}\small\item\em Wywoływany po kliknięciu przycisku "{}\+Zapisz dane"{} (save\+Data\+Button). \end{DoxyCompactList}\item 
+\Hypertarget{classmain_window_a82e95602ca9f0f053f752d5fde09babd}\label{classmain_window_a82e95602ca9f0f053f752d5fde09babd} 
+void {\bfseries on\+\_\+load\+Data\+Button\+\_\+clicked} ()
+\begin{DoxyCompactList}\small\item\em Wywoływany po kliknięciu przycisku "{}\+Wczytaj dane"{} (load\+Data\+Button). \end{DoxyCompactList}\item 
+\Hypertarget{classmain_window_a489acf124bef3d27ae5da79eef9aeda1}\label{classmain_window_a489acf124bef3d27ae5da79eef9aeda1} 
+void {\bfseries on\+\_\+analyze\+Button\+\_\+clicked} ()
+\begin{DoxyCompactList}\small\item\em Wywoływany po kliknięciu przycisku "{}\+Analizuj Dane"{} (analyze\+Button). \end{DoxyCompactList}\item 
+\Hypertarget{classmain_window_a2ed269472499e6e68149ccf10347a5e6}\label{classmain_window_a2ed269472499e6e68149ccf10347a5e6} 
+void {\bfseries on\+\_\+city\+Filter\+Line\+Edit\+\_\+text\+Changed} (const QString \&text)
+\begin{DoxyCompactList}\small\item\em Wywoływany po zmianie tekstu w polu filtra miejscowości (city\+Filter\+Line\+Edit). \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classmain_window_af6c1a2d2f896eb8b7896eb5fbce1ceb2}{handle\+Stations\+Fetched}} (const QList$<$ \mbox{\hyperlink{struct_station_info}{Station\+Info}} $>$ \&stations)
+\begin{DoxyCompactList}\small\item\em Odbiera listę stacji z \doxylink{class_gios_api_client}{Gios\+Api\+Client}, zapisuje ją i aktualizuje widok listy. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classmain_window_a8bc2ce26a05c63f894fd3bc5d6f8e347}{handle\+Sensors\+Fetched}} (const QList$<$ \mbox{\hyperlink{struct_sensor_info}{Sensor\+Info}} $>$ \&sensors)
+\begin{DoxyCompactList}\small\item\em Odbiera listę sensorów z \doxylink{class_gios_api_client}{Gios\+Api\+Client} i aktualizuje widok listy sensorów. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classmain_window_a4c85189989f4a60ab4cff98d74492da1}{handle\+Measurement\+Data\+Fetched}} (const \mbox{\hyperlink{struct_measurement_data}{Measurement\+Data}} \&measurement\+Result)
+\begin{DoxyCompactList}\small\item\em Odbiera dane pomiarowe z \doxylink{class_gios_api_client}{Gios\+Api\+Client}, zapisuje je i aktualizuje wykres oraz pole tekstowe. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classmain_window_aabcab48125018aab0b42f270d54dcbaf}{handle\+Network\+Error}} (const QString \&error\+String)
+\begin{DoxyCompactList}\small\item\em Odbiera informację o błędzie z \doxylink{class_gios_api_client}{Gios\+Api\+Client}, wyświetla komunikat i oferuje wczytanie danych. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classmain_window_aba9d46a53dda29b9a6cc657698d5c6df}{display\+Chart}} ()
+\begin{DoxyCompactList}\small\item\em Aktualizuje widżet wykresu (ui-\/\texorpdfstring{$>$}{>}chart\+View) na podstawie danych w {\ttfamily current\+Measurement\+Data}. Tworzy nowy obiekt QChart z odpowiednimi seriami i osiami. Poprzedni QChart jest usuwany. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classmain_window_a2ad13936c973daf2435cb673cf5c8e49}{filter\+Stations\+By\+City}} (const QString \&city\+Text)
+\begin{DoxyCompactList}\small\item\em Filtruje listę stacji (ui-\/\texorpdfstring{$>$}{>}list\+Widget) na podstawie podanego tekstu. Używa pełnej listy stacji przechowywanej w {\ttfamily all\+Stations\+List}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classmain_window_aa0e40d0240b1ed74cfdbbfc0bce5fca4}\label{classmain_window_aa0e40d0240b1ed74cfdbbfc0bce5fca4} 
+\mbox{\hyperlink{class_ui_1_1main_window}{Ui\+::main\+Window}} \texorpdfstring{$\ast$}{*} {\bfseries ui}
+\begin{DoxyCompactList}\small\item\em Wskaźnik na obiekt UI zarządzający widgetami z pliku .ui. \end{DoxyCompactList}\item 
+\Hypertarget{classmain_window_a6adbbaf735ee565457ce76a290e682ce}\label{classmain_window_a6adbbaf735ee565457ce76a290e682ce} 
+\mbox{\hyperlink{class_gios_api_client}{Gios\+Api\+Client}} \texorpdfstring{$\ast$}{*} {\bfseries api\+Client}
+\begin{DoxyCompactList}\small\item\em Obiekt odpowiedzialny za pobieranie danych z API. \end{DoxyCompactList}\item 
+\Hypertarget{classmain_window_ac7f478bbdcdc96125fa6a5dd6b8a1636}\label{classmain_window_ac7f478bbdcdc96125fa6a5dd6b8a1636} 
+\mbox{\hyperlink{struct_measurement_data}{Measurement\+Data}} {\bfseries current\+Measurement\+Data}
+\begin{DoxyCompactList}\small\item\em Bufor na ostatnio pobrane lub wczytane dane pomiarowe. \end{DoxyCompactList}\item 
+\Hypertarget{classmain_window_a7b6288530079ff4dddadca402023b78d}\label{classmain_window_a7b6288530079ff4dddadca402023b78d} 
+QList$<$ \mbox{\hyperlink{struct_station_info}{Station\+Info}} $>$ {\bfseries all\+Stations\+List}
+\begin{DoxyCompactList}\small\item\em Pełna lista stacji pobrana z API (używana do filtrowania). \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Główne okno aplikacji monitorującej jakość powietrza. 
+
+Odpowiada za interfejs użytkownika, w tym wyświetlanie list stacji i sensorów, prezentację danych pomiarowych na wykresie i w polu tekstowym, obsługę filtrowania stacji, zapisu/odczytu danych do/z pliku JSON oraz wyświetlanie wyników prostej analizy danych. Komunikuje się z \doxylink{class_gios_api_client}{Gios\+Api\+Client} w celu pobierania danych z sieci. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classmain_window_aeac52e1db2d23d399e59332dd291e1df}\index{mainWindow@{mainWindow}!mainWindow@{mainWindow}}
+\index{mainWindow@{mainWindow}!mainWindow@{mainWindow}}
+\doxysubsubsection{\texorpdfstring{mainWindow()}{mainWindow()}}
+{\footnotesize\ttfamily \label{classmain_window_aeac52e1db2d23d399e59332dd291e1df} 
+main\+Window\+::main\+Window (\begin{DoxyParamCaption}\item[{QWidget \texorpdfstring{$\ast$}{*}}]{parent}{ = {\ttfamily nullptr}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Konstruktor głównego okna. Inicjalizuje interfejs użytkownika z pliku .ui, tworzy obiekt \doxylink{class_gios_api_client}{Gios\+Api\+Client} i konfiguruje połączenia sygnał-\/slot. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & Wskaźnik na widget rodzica (zwykle nullptr). \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classmain_window_aba9d46a53dda29b9a6cc657698d5c6df}\index{mainWindow@{mainWindow}!displayChart@{displayChart}}
+\index{displayChart@{displayChart}!mainWindow@{mainWindow}}
+\doxysubsubsection{\texorpdfstring{displayChart()}{displayChart()}}
+{\footnotesize\ttfamily \label{classmain_window_aba9d46a53dda29b9a6cc657698d5c6df} 
+void main\+Window\+::display\+Chart (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Aktualizuje widżet wykresu (ui-\/\texorpdfstring{$>$}{>}chart\+View) na podstawie danych w {\ttfamily current\+Measurement\+Data}. Tworzy nowy obiekt QChart z odpowiednimi seriami i osiami. Poprzedni QChart jest usuwany. 
+
+Rysuje wykres danych pomiarowych w widżecie chart\+View.
+
+Tworzy nową serię danych, osie i obiekt QChart na podstawie danych przechowywanych w {\ttfamily current\+Measurement\+Data}. Poprzedni wykres jest automatycznie usuwany. Jeśli brak poprawnych danych, wyświetla pusty wykres z informacją. \Hypertarget{classmain_window_a2ad13936c973daf2435cb673cf5c8e49}\index{mainWindow@{mainWindow}!filterStationsByCity@{filterStationsByCity}}
+\index{filterStationsByCity@{filterStationsByCity}!mainWindow@{mainWindow}}
+\doxysubsubsection{\texorpdfstring{filterStationsByCity()}{filterStationsByCity()}}
+{\footnotesize\ttfamily \label{classmain_window_a2ad13936c973daf2435cb673cf5c8e49} 
+void main\+Window\+::filter\+Stations\+By\+City (\begin{DoxyParamCaption}\item[{const QString \&}]{city\+Text}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Filtruje listę stacji (ui-\/\texorpdfstring{$>$}{>}list\+Widget) na podstawie podanego tekstu. Używa pełnej listy stacji przechowywanej w {\ttfamily all\+Stations\+List}. 
+
+Filtruje listę stacji wyświetlaną w ui-\/\texorpdfstring{$>$}{>}list\+Widget na podstawie podanego tekstu.
+
+
+\begin{DoxyParams}{Parameters}
+{\em city\+Text} & Tekst do filtrowania nazw miejscowości.\\
+\hline
+{\em city\+Text} & Tekst wpisany przez użytkownika w polu filtra miejscowości. Filtrowanie ignoruje wielkość liter i białe znaki na brzegach. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classmain_window_a4c85189989f4a60ab4cff98d74492da1}\index{mainWindow@{mainWindow}!handleMeasurementDataFetched@{handleMeasurementDataFetched}}
+\index{handleMeasurementDataFetched@{handleMeasurementDataFetched}!mainWindow@{mainWindow}}
+\doxysubsubsection{\texorpdfstring{handleMeasurementDataFetched}{handleMeasurementDataFetched}}
+{\footnotesize\ttfamily \label{classmain_window_a4c85189989f4a60ab4cff98d74492da1} 
+void main\+Window\+::handle\+Measurement\+Data\+Fetched (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_measurement_data}{Measurement\+Data}} \&}]{measurement\+Result}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Odbiera dane pomiarowe z \doxylink{class_gios_api_client}{Gios\+Api\+Client}, zapisuje je i aktualizuje wykres oraz pole tekstowe. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em measurement\+Result} & Dane pomiarowe dla jednego parametru. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classmain_window_aabcab48125018aab0b42f270d54dcbaf}\index{mainWindow@{mainWindow}!handleNetworkError@{handleNetworkError}}
+\index{handleNetworkError@{handleNetworkError}!mainWindow@{mainWindow}}
+\doxysubsubsection{\texorpdfstring{handleNetworkError}{handleNetworkError}}
+{\footnotesize\ttfamily \label{classmain_window_aabcab48125018aab0b42f270d54dcbaf} 
+void main\+Window\+::handle\+Network\+Error (\begin{DoxyParamCaption}\item[{const QString \&}]{error\+String}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Odbiera informację o błędzie z \doxylink{class_gios_api_client}{Gios\+Api\+Client}, wyświetla komunikat i oferuje wczytanie danych. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em error\+String} & Tekst błędu. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classmain_window_a8bc2ce26a05c63f894fd3bc5d6f8e347}\index{mainWindow@{mainWindow}!handleSensorsFetched@{handleSensorsFetched}}
+\index{handleSensorsFetched@{handleSensorsFetched}!mainWindow@{mainWindow}}
+\doxysubsubsection{\texorpdfstring{handleSensorsFetched}{handleSensorsFetched}}
+{\footnotesize\ttfamily \label{classmain_window_a8bc2ce26a05c63f894fd3bc5d6f8e347} 
+void main\+Window\+::handle\+Sensors\+Fetched (\begin{DoxyParamCaption}\item[{const QList$<$ \mbox{\hyperlink{struct_sensor_info}{Sensor\+Info}} $>$ \&}]{sensors}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Odbiera listę sensorów z \doxylink{class_gios_api_client}{Gios\+Api\+Client} i aktualizuje widok listy sensorów. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sensors} & Lista informacji o sensorach. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classmain_window_af6c1a2d2f896eb8b7896eb5fbce1ceb2}\index{mainWindow@{mainWindow}!handleStationsFetched@{handleStationsFetched}}
+\index{handleStationsFetched@{handleStationsFetched}!mainWindow@{mainWindow}}
+\doxysubsubsection{\texorpdfstring{handleStationsFetched}{handleStationsFetched}}
+{\footnotesize\ttfamily \label{classmain_window_af6c1a2d2f896eb8b7896eb5fbce1ceb2} 
+void main\+Window\+::handle\+Stations\+Fetched (\begin{DoxyParamCaption}\item[{const QList$<$ \mbox{\hyperlink{struct_station_info}{Station\+Info}} $>$ \&}]{stations}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Odbiera listę stacji z \doxylink{class_gios_api_client}{Gios\+Api\+Client}, zapisuje ją i aktualizuje widok listy. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stations} & Lista informacji o stacjach. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{mainwindow_8h}{mainwindow.\+h}}\item 
+mainwindow.\+cpp\end{DoxyCompactItemize}

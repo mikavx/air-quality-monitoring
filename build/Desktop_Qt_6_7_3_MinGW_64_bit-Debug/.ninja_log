@@ -1,0 +1,60 @@
+# ninja log v6
+18	1358	7680658900464024	AirQualityMonitoring_autogen/timestamp	73da064ef4552a61
+1387	5773	7680658902763994	CMakeFiles/AirQualityMonitoring.dir/giosapiclient.cpp.obj	8d368f266ab0a8fd
+18	1358	7680658900464024	AirQualityMonitoring_autogen/mocs_compilation.cpp	73da064ef4552a61
+18	1358	7680658900464024	C:/Users/Olga/Desktop/Projekt JPO/AirQualityMonitoring/build/Desktop_Qt_6_7_3_MinGW_64_bit-Debug/AirQualityMonitoring_autogen/mocs_compilation.cpp	73da064ef4552a61
+1375	6044	7680658902655482	CMakeFiles/AirQualityMonitoring.dir/main.cpp.obj	d3320fff38fb8ba1
+18	1358	7680658900464024	C:/Users/Olga/Desktop/Projekt JPO/AirQualityMonitoring/build/Desktop_Qt_6_7_3_MinGW_64_bit-Debug/AirQualityMonitoring_autogen/timestamp	73da064ef4552a61
+1393	6311	7680658902827667	CMakeFiles/AirQualityMonitoring.dir/apiworker.cpp.obj	e1fff22587f34c30
+1381	7936	7680658902705732	CMakeFiles/AirQualityMonitoring.dir/mainwindow.cpp.obj	5a99e1cbcf9fd4fb
+46	425	7680659346684489	AirQualityMonitoring_autogen/timestamp	73da064ef4552a61
+46	425	7680659346684489	AirQualityMonitoring_autogen/mocs_compilation.cpp	73da064ef4552a61
+46	425	7680659346684489	C:/Users/Olga/Desktop/Projekt JPO/AirQualityMonitoring/build/Desktop_Qt_6_7_3_MinGW_64_bit-Debug/AirQualityMonitoring_autogen/timestamp	73da064ef4552a61
+46	425	7680659346684489	C:/Users/Olga/Desktop/Projekt JPO/AirQualityMonitoring/build/Desktop_Qt_6_7_3_MinGW_64_bit-Debug/AirQualityMonitoring_autogen/mocs_compilation.cpp	73da064ef4552a61
+427	4491	7680659348504590	CMakeFiles/AirQualityMonitoring.dir/AirQualityMonitoring_autogen/mocs_compilation.cpp.obj	8359b7cc2f674edb
+433	5866	7680659348574860	CMakeFiles/AirQualityMonitoring.dir/mainwindow.cpp.obj	5a99e1cbcf9fd4fb
+5867	6840	7680659402913307	AirQualityMonitoring.exe	1876127eaeb1025a
+63	1030	7680684213798095	AirQualityMonitoring_autogen/timestamp	73da064ef4552a61
+63	1030	7680684213798095	AirQualityMonitoring_autogen/mocs_compilation.cpp	73da064ef4552a61
+63	1030	7680684213798095	C:/Users/Olga/Desktop/Projekt JPO/AirQualityMonitoring/build/Desktop_Qt_6_7_3_MinGW_64_bit-Debug/AirQualityMonitoring_autogen/timestamp	73da064ef4552a61
+63	1030	7680684213798095	C:/Users/Olga/Desktop/Projekt JPO/AirQualityMonitoring/build/Desktop_Qt_6_7_3_MinGW_64_bit-Debug/AirQualityMonitoring_autogen/mocs_compilation.cpp	73da064ef4552a61
+1039	4154	7680684215186901	CMakeFiles/AirQualityMonitoring.dir/main.cpp.obj	d3320fff38fb8ba1
+1032	4409	7680684215121802	CMakeFiles/AirQualityMonitoring.dir/AirQualityMonitoring_autogen/mocs_compilation.cpp.obj	8359b7cc2f674edb
+1051	4970	7680684215296870	CMakeFiles/AirQualityMonitoring.dir/giosapiclient.cpp.obj	8d368f266ab0a8fd
+58	300	7680684586944286	AirQualityMonitoring_autogen/timestamp	73da064ef4552a61
+58	300	7680684586944286	AirQualityMonitoring_autogen/mocs_compilation.cpp	73da064ef4552a61
+58	300	7680684586944286	C:/Users/Olga/Desktop/Projekt JPO/AirQualityMonitoring/build/Desktop_Qt_6_7_3_MinGW_64_bit-Debug/AirQualityMonitoring_autogen/timestamp	73da064ef4552a61
+58	300	7680684586944286	C:/Users/Olga/Desktop/Projekt JPO/AirQualityMonitoring/build/Desktop_Qt_6_7_3_MinGW_64_bit-Debug/AirQualityMonitoring_autogen/mocs_compilation.cpp	73da064ef4552a61
+48	279	7680686036008999	AirQualityMonitoring_autogen/timestamp	73da064ef4552a61
+48	279	7680686036008999	AirQualityMonitoring_autogen/mocs_compilation.cpp	73da064ef4552a61
+48	279	7680686036008999	C:/Users/Olga/Desktop/Projekt JPO/AirQualityMonitoring/build/Desktop_Qt_6_7_3_MinGW_64_bit-Debug/AirQualityMonitoring_autogen/timestamp	73da064ef4552a61
+48	279	7680686036008999	C:/Users/Olga/Desktop/Projekt JPO/AirQualityMonitoring/build/Desktop_Qt_6_7_3_MinGW_64_bit-Debug/AirQualityMonitoring_autogen/mocs_compilation.cpp	73da064ef4552a61
+280	4753	7680686038350168	CMakeFiles/AirQualityMonitoring.dir/mainwindow.cpp.obj	5a99e1cbcf9fd4fb
+4753	5873	7680686083076617	AirQualityMonitoring.exe	1876127eaeb1025a
+34	1208	7680737396965580	AirQualityMonitoring_autogen/timestamp	73da064ef4552a61
+34	1208	7680737396965580	AirQualityMonitoring_autogen/mocs_compilation.cpp	73da064ef4552a61
+34	1208	7680737396965580	C:/Users/Olga/Desktop/Projekt JPO/AirQualityMonitoring/build/Desktop_Qt_6_7_3_MinGW_64_bit-Debug/AirQualityMonitoring_autogen/timestamp	73da064ef4552a61
+34	1208	7680737396965580	C:/Users/Olga/Desktop/Projekt JPO/AirQualityMonitoring/build/Desktop_Qt_6_7_3_MinGW_64_bit-Debug/AirQualityMonitoring_autogen/mocs_compilation.cpp	73da064ef4552a61
+1222	4465	7680737398303120	CMakeFiles/AirQualityMonitoring.dir/main.cpp.obj	d3320fff38fb8ba1
+1210	4500	7680737398166962	CMakeFiles/AirQualityMonitoring.dir/AirQualityMonitoring_autogen/mocs_compilation.cpp.obj	8359b7cc2f674edb
+1242	4940	7680737398521123	CMakeFiles/AirQualityMonitoring.dir/giosapiclient.cpp.obj	8d368f266ab0a8fd
+1232	7013	7680737398434074	CMakeFiles/AirQualityMonitoring.dir/mainwindow.cpp.obj	5a99e1cbcf9fd4fb
+7013	8007	7680737456177428	AirQualityMonitoring.exe	1876127eaeb1025a
+83	612	7680939212268990	AirQualityMonitoring_autogen/timestamp	73da064ef4552a61
+83	612	7680939212268990	AirQualityMonitoring_autogen/mocs_compilation.cpp	73da064ef4552a61
+83	612	7680939212268990	C:/Users/Olga/Desktop/Projekt JPO/AirQualityMonitoring/build/Desktop_Qt_6_7_3_MinGW_64_bit-Debug/AirQualityMonitoring_autogen/timestamp	73da064ef4552a61
+83	612	7680939212268990	C:/Users/Olga/Desktop/Projekt JPO/AirQualityMonitoring/build/Desktop_Qt_6_7_3_MinGW_64_bit-Debug/AirQualityMonitoring_autogen/mocs_compilation.cpp	73da064ef4552a61
+615	4691	7680939217591523	CMakeFiles/AirQualityMonitoring.dir/mainwindow.cpp.obj	5a99e1cbcf9fd4fb
+4691	5825	7680939258336763	AirQualityMonitoring.exe	1876127eaeb1025a
+44	255	7680940040472555	AirQualityMonitoring_autogen/timestamp	73da064ef4552a61
+44	255	7680940040472555	AirQualityMonitoring_autogen/mocs_compilation.cpp	73da064ef4552a61
+44	255	7680940040472555	C:/Users/Olga/Desktop/Projekt JPO/AirQualityMonitoring/build/Desktop_Qt_6_7_3_MinGW_64_bit-Debug/AirQualityMonitoring_autogen/timestamp	73da064ef4552a61
+44	255	7680940040472555	C:/Users/Olga/Desktop/Projekt JPO/AirQualityMonitoring/build/Desktop_Qt_6_7_3_MinGW_64_bit-Debug/AirQualityMonitoring_autogen/mocs_compilation.cpp	73da064ef4552a61
+256	5118	7680940042593634	CMakeFiles/AirQualityMonitoring.dir/mainwindow.cpp.obj	5a99e1cbcf9fd4fb
+5118	5820	7680940091213665	AirQualityMonitoring.exe	1876127eaeb1025a
+69	522	7680944575075408	AirQualityMonitoring_autogen/timestamp	73da064ef4552a61
+69	522	7680944575075408	AirQualityMonitoring_autogen/mocs_compilation.cpp	73da064ef4552a61
+69	522	7680944575075408	C:/Users/Olga/Desktop/Projekt JPO/AirQualityMonitoring/build/Desktop_Qt_6_7_3_MinGW_64_bit-Debug/AirQualityMonitoring_autogen/timestamp	73da064ef4552a61
+69	522	7680944575075408	C:/Users/Olga/Desktop/Projekt JPO/AirQualityMonitoring/build/Desktop_Qt_6_7_3_MinGW_64_bit-Debug/AirQualityMonitoring_autogen/mocs_compilation.cpp	73da064ef4552a61
+523	4809	7680944579612102	CMakeFiles/AirQualityMonitoring.dir/mainwindow.cpp.obj	5a99e1cbcf9fd4fb
+4809	5646	7680944622475466	AirQualityMonitoring.exe	1876127eaeb1025a

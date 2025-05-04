@@ -1,0 +1,99 @@
+\doxysection{giosapiclient.\+h}
+\hypertarget{giosapiclient_8h_source}{}\label{giosapiclient_8h_source}\mbox{\hyperlink{giosapiclient_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ GIOSAPICLIENT\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ GIOSAPICLIENT\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <QObject>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <QList>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <QString>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <QDateTime>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <QVariant>}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{comment}{//\ ===\ POTRZEBNE\ FORWARD\ DECLARATIONS\ ===}}
+\DoxyCodeLine{00011\ \textcolor{keyword}{class\ }QNetworkAccessManager;}
+\DoxyCodeLine{00012\ \textcolor{keyword}{class\ }QNetworkReply;}
+\DoxyCodeLine{00013\ \textcolor{keyword}{class\ }QJsonObject;}
+\DoxyCodeLine{00014\ \textcolor{keyword}{class\ }QJsonArray;}
+\DoxyCodeLine{00015\ \textcolor{keyword}{class\ }QByteArray;}
+\DoxyCodeLine{00016\ \textcolor{comment}{//\ =====================================}}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00028\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_station_info}{StationInfo}}\ \{}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id}\ =\ -\/1;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00030\ \ \ \ \ QString\ \mbox{\hyperlink{struct_station_info_a286c8ac08ea12a60a4182ab86900f579}{stationName}};\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00031\ \ \ \ \ QString\ \mbox{\hyperlink{struct_station_info_a0faa2c7ac5cc012ba81b1b0248236d95}{cityName}};\ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00032\ \};}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00038\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_sensor_info}{SensorInfo}}\ \{}
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id}\ =\ -\/1;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_sensor_info_a72ec03042539948c0a791435c9f369c8}{stationId}}\ =\ -\/1;\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00041\ \ \ \ \ QString\ \mbox{\hyperlink{struct_sensor_info_acf5b49f4fe24beb145966c8bb5e9ffe8}{paramName}};\ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00042\ \ \ \ \ QString\ \mbox{\hyperlink{struct_sensor_info_a0663d00f8428d15709438c7518f67af1}{paramFormula}};\ \ \ \ \ \ \ }
+\DoxyCodeLine{00043\ \ \ \ \ QString\ \mbox{\hyperlink{struct_sensor_info_a0a92fab99949810f8afda5c435b6cfde}{paramCode}};\ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_sensor_info_af0e1b23f88e360f29f056c4069d26494}{idParam}}\ =\ -\/1;\ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00045\ \};}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00051\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_measurement}{Measurement}}\ \{}
+\DoxyCodeLine{00052\ \ \ \ \ QDateTime\ \mbox{\hyperlink{struct_measurement_a80103a2df03c90f32ff933fa886d90c4}{date}};\ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00053\ \ \ \ \ QVariant\ \mbox{\hyperlink{struct_measurement_a04b98cd60a19d4e52ebd1f4f30e14fc2}{value}};\ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00054\ \};}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00060\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_measurement_data}{MeasurementData}}\ \{}
+\DoxyCodeLine{00061\ \ \ \ \ QString\ \mbox{\hyperlink{struct_measurement_data_ac64eb05d815553a394bc7703fc9ec196}{key}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00062\ \ \ \ \ QList<Measurement>\ \mbox{\hyperlink{struct_measurement_data_a125a82a40bccc38e2aa50ff9c90588e0}{values}};\ \ }
+\DoxyCodeLine{00063\ \};}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00065\ \textcolor{comment}{//\ Rejestracja\ typów\ (niepotrzebna\ bez\ wielowątkowości,\ ale\ zostawiam\ zakomentowane\ dla\ informacji)}}
+\DoxyCodeLine{00066\ \textcolor{comment}{//\ Q\_DECLARE\_METATYPE(StationInfo);}}
+\DoxyCodeLine{00067\ \textcolor{comment}{//\ Q\_DECLARE\_METATYPE(SensorInfo);}}
+\DoxyCodeLine{00068\ \textcolor{comment}{//\ Q\_DECLARE\_METATYPE(Measurement);}}
+\DoxyCodeLine{00069\ \textcolor{comment}{//\ Q\_DECLARE\_METATYPE(MeasurementData);}}
+\DoxyCodeLine{00070\ \textcolor{comment}{//\ Q\_DECLARE\_METATYPE(QList<StationInfo>);}}
+\DoxyCodeLine{00071\ \textcolor{comment}{//\ Q\_DECLARE\_METATYPE(QList<SensorInfo>);}}
+\DoxyCodeLine{00072\ }
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00084\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_gios_api_client_aa8c21ee53825fb5eb4abd76250dd7737}{GiosApiClient}}\ :\ \textcolor{keyword}{public}\ QObject}
+\DoxyCodeLine{00085\ \{}
+\DoxyCodeLine{00086\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00087\ }
+\DoxyCodeLine{00088\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00093\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_gios_api_client_aa8c21ee53825fb5eb4abd76250dd7737}{GiosApiClient}}(QObject\ *parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00094\ }
+\DoxyCodeLine{00095\ \ \ \ \ \textcolor{comment}{//\ ===\ Metody\ publiczne\ inicjujące\ żądania\ ===}}
+\DoxyCodeLine{00096\ }
+\DoxyCodeLine{00101\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_gios_api_client_a9e70f76555527ac457ce5ecca2f750d7}{fetchAllStations}}();}
+\DoxyCodeLine{00102\ }
+\DoxyCodeLine{00108\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_gios_api_client_a5fe9651cb6952678d1072a24600953a1}{fetchSensorsForStation}}(\textcolor{keywordtype}{int}\ stationId);}
+\DoxyCodeLine{00109\ }
+\DoxyCodeLine{00115\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_gios_api_client_ac9c70f45b18e8467c412da6f32687a94}{fetchMeasurementData}}(\textcolor{keywordtype}{int}\ sensorId);}
+\DoxyCodeLine{00116\ }
+\DoxyCodeLine{00117\ signals:}
+\DoxyCodeLine{00118\ \ \ \ \ \textcolor{comment}{//\ ===\ Sygnały\ informujące\ o\ wynikach\ ===}}
+\DoxyCodeLine{00119\ }
+\DoxyCodeLine{00124\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_gios_api_client_ae921aff93ea2c7cfc6ebf01bd27b7926}{stationsFetched}}(\textcolor{keyword}{const}\ QList<StationInfo>\&\ stations);}
+\DoxyCodeLine{00125\ }
+\DoxyCodeLine{00130\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_gios_api_client_a3cc6c05223490cd0f0dc2bc744d22791}{sensorsFetched}}(\textcolor{keyword}{const}\ QList<SensorInfo>\&\ sensors);}
+\DoxyCodeLine{00131\ }
+\DoxyCodeLine{00136\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_gios_api_client_a66c096381cb24411b101e05673677ac5}{measurementDataFetched}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{struct_measurement_data}{MeasurementData}}\&\ data);}
+\DoxyCodeLine{00137\ }
+\DoxyCodeLine{00142\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_gios_api_client_a072888624c81ce529e4c6b6a0d52e3b9}{networkError}}(\textcolor{keyword}{const}\ QString\&\ errorString);}
+\DoxyCodeLine{00143\ }
+\DoxyCodeLine{00144\ \textcolor{keyword}{private}\ slots:}
+\DoxyCodeLine{00146\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_gios_api_client_aa58d16b8feed9d65679cf24dded09e4b}{onFetchStationsFinished}}(QNetworkReply\ *reply);}
+\DoxyCodeLine{00148\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_gios_api_client_aee0bc01f02f9083daf894a7e74bdc1c1}{onFetchSensorsFinished}}(QNetworkReply\ *reply);}
+\DoxyCodeLine{00150\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_gios_api_client_a40bdc027fac55019d8e3d4feb2792093}{onFetchMeasurementDataFinished}}(QNetworkReply\ *reply);}
+\DoxyCodeLine{00151\ }
+\DoxyCodeLine{00152\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00153\ \ \ \ \ \textcolor{comment}{//\ ===\ Metody\ pomocnicze\ (parsowanie)\ ===}}
+\DoxyCodeLine{00155\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_gios_api_client_a2c9007dccb050820444ee84c6d81ac83}{parseStationsJson}}(\textcolor{keyword}{const}\ QByteArray\&\ jsonData);}
+\DoxyCodeLine{00157\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_gios_api_client_a62e5f647d58fabaf88eb6282f67fabfc}{parseSensorsJson}}(\textcolor{keyword}{const}\ QByteArray\&\ jsonData,\ \textcolor{keywordtype}{int}\ stationId);}
+\DoxyCodeLine{00159\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_gios_api_client_ac155f8aa0c45c9d1399b22fdb6a07bc8}{parseMeasurementDataJson}}(\textcolor{keyword}{const}\ QByteArray\&\ jsonData);}
+\DoxyCodeLine{00160\ }
+\DoxyCodeLine{00161\ \ \ \ \ \textcolor{comment}{//\ ===\ Pola\ klasy\ ===}}
+\DoxyCodeLine{00162\ \ \ \ \ QNetworkAccessManager\ *\mbox{\hyperlink{class_gios_api_client_a7da8377862cf9b49fa747c9bcfd12078}{networkManager}};\ }
+\DoxyCodeLine{00163\ \};}
+\DoxyCodeLine{00164\ }
+\DoxyCodeLine{00165\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ GIOSAPICLIENT\_H}}
+
+\end{DoxyCode}

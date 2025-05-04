@@ -1,0 +1,193 @@
+\doxysection{Gios\+Api\+Client Class Reference}
+\hypertarget{class_gios_api_client}{}\label{class_gios_api_client}\index{GiosApiClient@{GiosApiClient}}
+
+
+Odpowiada za komunikację z publicznym API GIOŚ PJP.  
+
+
+
+
+{\ttfamily \#include $<$giosapiclient.\+h$>$}
+
+Inheritance diagram for Gios\+Api\+Client\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_gios_api_client}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_gios_api_client_ae921aff93ea2c7cfc6ebf01bd27b7926}{stations\+Fetched}} (const QList$<$ \mbox{\hyperlink{struct_station_info}{Station\+Info}} $>$ \&stations)
+\begin{DoxyCompactList}\small\item\em Emitowany po pomyślnym pobraniu i przetworzeniu listy stacji. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_gios_api_client_a3cc6c05223490cd0f0dc2bc744d22791}{sensors\+Fetched}} (const QList$<$ \mbox{\hyperlink{struct_sensor_info}{Sensor\+Info}} $>$ \&sensors)
+\begin{DoxyCompactList}\small\item\em Emitowany po pomyślnym pobraniu i przetworzeniu listy sensorów dla stacji. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_gios_api_client_a66c096381cb24411b101e05673677ac5}{measurement\+Data\+Fetched}} (const \mbox{\hyperlink{struct_measurement_data}{Measurement\+Data}} \&data)
+\begin{DoxyCompactList}\small\item\em Emitowany po pomyślnym pobraniu i przetworzeniu danych pomiarowych. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_gios_api_client_a072888624c81ce529e4c6b6a0d52e3b9}{network\+Error}} (const QString \&error\+String)
+\begin{DoxyCompactList}\small\item\em Emitowany, gdy wystąpi błąd podczas komunikacji sieciowej lub parsowania odpowiedzi. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_gios_api_client_aa8c21ee53825fb5eb4abd76250dd7737}{Gios\+Api\+Client}} (QObject \texorpdfstring{$\ast$}{*}parent=nullptr)
+\begin{DoxyCompactList}\small\item\em Konstruktor. Tworzy instancję QNetwork\+Access\+Manager. \end{DoxyCompactList}\item 
+\Hypertarget{class_gios_api_client_a9e70f76555527ac457ce5ecca2f750d7}\label{class_gios_api_client_a9e70f76555527ac457ce5ecca2f750d7} 
+void {\bfseries fetch\+All\+Stations} ()
+\begin{DoxyCompactList}\small\item\em Inicjuje pobranie listy wszystkich dostępnych stacji pomiarowych. Po zakończeniu operacji emitowany jest sygnał \doxylink{class_gios_api_client_ae921aff93ea2c7cfc6ebf01bd27b7926}{stations\+Fetched()} lub \doxylink{class_gios_api_client_a072888624c81ce529e4c6b6a0d52e3b9}{network\+Error()}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_gios_api_client_a5fe9651cb6952678d1072a24600953a1}{fetch\+Sensors\+For\+Station}} (int station\+Id)
+\begin{DoxyCompactList}\small\item\em Inicjuje pobranie listy sensorów dla określonej stacji pomiarowej. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_gios_api_client_ac9c70f45b18e8467c412da6f32687a94}{fetch\+Measurement\+Data}} (int sensor\+Id)
+\begin{DoxyCompactList}\small\item\em Inicjuje pobranie danych pomiarowych z określonego sensora. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Slots}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_gios_api_client_aa58d16b8feed9d65679cf24dded09e4b}\label{class_gios_api_client_aa58d16b8feed9d65679cf24dded09e4b} 
+void {\bfseries on\+Fetch\+Stations\+Finished} (QNetwork\+Reply \texorpdfstring{$\ast$}{*}reply)
+\begin{DoxyCompactList}\small\item\em Slot wewnętrzny, odbiera sygnał finished() dla odpowiedzi na żądanie stacji. \end{DoxyCompactList}\item 
+\Hypertarget{class_gios_api_client_aee0bc01f02f9083daf894a7e74bdc1c1}\label{class_gios_api_client_aee0bc01f02f9083daf894a7e74bdc1c1} 
+void {\bfseries on\+Fetch\+Sensors\+Finished} (QNetwork\+Reply \texorpdfstring{$\ast$}{*}reply)
+\begin{DoxyCompactList}\small\item\em Slot wewnętrzny, odbiera sygnał finished() dla odpowiedzi na żądanie sensorów. \end{DoxyCompactList}\item 
+\Hypertarget{class_gios_api_client_a40bdc027fac55019d8e3d4feb2792093}\label{class_gios_api_client_a40bdc027fac55019d8e3d4feb2792093} 
+void {\bfseries on\+Fetch\+Measurement\+Data\+Finished} (QNetwork\+Reply \texorpdfstring{$\ast$}{*}reply)
+\begin{DoxyCompactList}\small\item\em Slot wewnętrzny, odbiera sygnał finished() dla odpowiedzi na żądanie danych pomiarowych. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_gios_api_client_a2c9007dccb050820444ee84c6d81ac83}\label{class_gios_api_client_a2c9007dccb050820444ee84c6d81ac83} 
+void {\bfseries parse\+Stations\+Json} (const QByte\+Array \&json\+Data)
+\begin{DoxyCompactList}\small\item\em Parsuje odpowiedź JSON zawierającą listę stacji. \end{DoxyCompactList}\item 
+\Hypertarget{class_gios_api_client_a62e5f647d58fabaf88eb6282f67fabfc}\label{class_gios_api_client_a62e5f647d58fabaf88eb6282f67fabfc} 
+void {\bfseries parse\+Sensors\+Json} (const QByte\+Array \&json\+Data, int station\+Id)
+\begin{DoxyCompactList}\small\item\em Parsuje odpowiedź JSON zawierającą listę sensorów. \end{DoxyCompactList}\item 
+\Hypertarget{class_gios_api_client_ac155f8aa0c45c9d1399b22fdb6a07bc8}\label{class_gios_api_client_ac155f8aa0c45c9d1399b22fdb6a07bc8} 
+void {\bfseries parse\+Measurement\+Data\+Json} (const QByte\+Array \&json\+Data)
+\begin{DoxyCompactList}\small\item\em Parsuje odpowiedź JSON zawierającą dane pomiarowe. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_gios_api_client_a7da8377862cf9b49fa747c9bcfd12078}\label{class_gios_api_client_a7da8377862cf9b49fa747c9bcfd12078} 
+QNetwork\+Access\+Manager \texorpdfstring{$\ast$}{*} {\bfseries network\+Manager}
+\begin{DoxyCompactList}\small\item\em Manager Qt do obsługi operacji sieciowych. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Odpowiada za komunikację z publicznym API GIOŚ PJP. 
+
+Pobiera dane o stacjach pomiarowych, sensorach na tych stacjach oraz historyczne dane pomiarowe z wybranych sensorów. Komunikacja odbywa się asynchronicznie za pomocą QNetwork\+Access\+Manager. Wyniki zwracane są poprzez sygnały. Klasa obsługuje również podstawowe błędy sieciowe oraz błędy parsowania odpowiedzi JSON. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_gios_api_client_aa8c21ee53825fb5eb4abd76250dd7737}\index{GiosApiClient@{GiosApiClient}!GiosApiClient@{GiosApiClient}}
+\index{GiosApiClient@{GiosApiClient}!GiosApiClient@{GiosApiClient}}
+\doxysubsubsection{\texorpdfstring{GiosApiClient()}{GiosApiClient()}}
+{\footnotesize\ttfamily \label{class_gios_api_client_aa8c21ee53825fb5eb4abd76250dd7737} 
+Gios\+Api\+Client\+::\+Gios\+Api\+Client (\begin{DoxyParamCaption}\item[{QObject \texorpdfstring{$\ast$}{*}}]{parent}{ = {\ttfamily nullptr}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Konstruktor. Tworzy instancję QNetwork\+Access\+Manager. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & Wskaźnik na obiekt rodzica. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_gios_api_client_ac9c70f45b18e8467c412da6f32687a94}\index{GiosApiClient@{GiosApiClient}!fetchMeasurementData@{fetchMeasurementData}}
+\index{fetchMeasurementData@{fetchMeasurementData}!GiosApiClient@{GiosApiClient}}
+\doxysubsubsection{\texorpdfstring{fetchMeasurementData()}{fetchMeasurementData()}}
+{\footnotesize\ttfamily \label{class_gios_api_client_ac9c70f45b18e8467c412da6f32687a94} 
+void Gios\+Api\+Client\+::fetch\+Measurement\+Data (\begin{DoxyParamCaption}\item[{int}]{sensor\+Id}{}\end{DoxyParamCaption})}
+
+
+
+Inicjuje pobranie danych pomiarowych z określonego sensora. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sensor\+Id} & ID sensora, z którego dane mają zostać pobrane. Po zakończeniu operacji emitowany jest sygnał \doxylink{class_gios_api_client_a66c096381cb24411b101e05673677ac5}{measurement\+Data\+Fetched()} lub \doxylink{class_gios_api_client_a072888624c81ce529e4c6b6a0d52e3b9}{network\+Error()}. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_gios_api_client_a5fe9651cb6952678d1072a24600953a1}\index{GiosApiClient@{GiosApiClient}!fetchSensorsForStation@{fetchSensorsForStation}}
+\index{fetchSensorsForStation@{fetchSensorsForStation}!GiosApiClient@{GiosApiClient}}
+\doxysubsubsection{\texorpdfstring{fetchSensorsForStation()}{fetchSensorsForStation()}}
+{\footnotesize\ttfamily \label{class_gios_api_client_a5fe9651cb6952678d1072a24600953a1} 
+void Gios\+Api\+Client\+::fetch\+Sensors\+For\+Station (\begin{DoxyParamCaption}\item[{int}]{station\+Id}{}\end{DoxyParamCaption})}
+
+
+
+Inicjuje pobranie listy sensorów dla określonej stacji pomiarowej. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em station\+Id} & ID stacji, której sensory mają zostać pobrane. Po zakończeniu operacji emitowany jest sygnał \doxylink{class_gios_api_client_a3cc6c05223490cd0f0dc2bc744d22791}{sensors\+Fetched()} lub \doxylink{class_gios_api_client_a072888624c81ce529e4c6b6a0d52e3b9}{network\+Error()}. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_gios_api_client_a66c096381cb24411b101e05673677ac5}\index{GiosApiClient@{GiosApiClient}!measurementDataFetched@{measurementDataFetched}}
+\index{measurementDataFetched@{measurementDataFetched}!GiosApiClient@{GiosApiClient}}
+\doxysubsubsection{\texorpdfstring{measurementDataFetched}{measurementDataFetched}}
+{\footnotesize\ttfamily \label{class_gios_api_client_a66c096381cb24411b101e05673677ac5} 
+void Gios\+Api\+Client\+::measurement\+Data\+Fetched (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_measurement_data}{Measurement\+Data}} \&}]{data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Emitowany po pomyślnym pobraniu i przetworzeniu danych pomiarowych. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & Obiekt \doxylink{struct_measurement_data}{Measurement\+Data} z kluczem parametru i listą odczytów. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_gios_api_client_a072888624c81ce529e4c6b6a0d52e3b9}\index{GiosApiClient@{GiosApiClient}!networkError@{networkError}}
+\index{networkError@{networkError}!GiosApiClient@{GiosApiClient}}
+\doxysubsubsection{\texorpdfstring{networkError}{networkError}}
+{\footnotesize\ttfamily \label{class_gios_api_client_a072888624c81ce529e4c6b6a0d52e3b9} 
+void Gios\+Api\+Client\+::network\+Error (\begin{DoxyParamCaption}\item[{const QString \&}]{error\+String}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Emitowany, gdy wystąpi błąd podczas komunikacji sieciowej lub parsowania odpowiedzi. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em error\+String} & Komunikat opisujący błąd. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_gios_api_client_a3cc6c05223490cd0f0dc2bc744d22791}\index{GiosApiClient@{GiosApiClient}!sensorsFetched@{sensorsFetched}}
+\index{sensorsFetched@{sensorsFetched}!GiosApiClient@{GiosApiClient}}
+\doxysubsubsection{\texorpdfstring{sensorsFetched}{sensorsFetched}}
+{\footnotesize\ttfamily \label{class_gios_api_client_a3cc6c05223490cd0f0dc2bc744d22791} 
+void Gios\+Api\+Client\+::sensors\+Fetched (\begin{DoxyParamCaption}\item[{const QList$<$ \mbox{\hyperlink{struct_sensor_info}{Sensor\+Info}} $>$ \&}]{sensors}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Emitowany po pomyślnym pobraniu i przetworzeniu listy sensorów dla stacji. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sensors} & Lista obiektów \doxylink{struct_sensor_info}{Sensor\+Info} zawierająca dane sensorów. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_gios_api_client_ae921aff93ea2c7cfc6ebf01bd27b7926}\index{GiosApiClient@{GiosApiClient}!stationsFetched@{stationsFetched}}
+\index{stationsFetched@{stationsFetched}!GiosApiClient@{GiosApiClient}}
+\doxysubsubsection{\texorpdfstring{stationsFetched}{stationsFetched}}
+{\footnotesize\ttfamily \label{class_gios_api_client_ae921aff93ea2c7cfc6ebf01bd27b7926} 
+void Gios\+Api\+Client\+::stations\+Fetched (\begin{DoxyParamCaption}\item[{const QList$<$ \mbox{\hyperlink{struct_station_info}{Station\+Info}} $>$ \&}]{stations}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Emitowany po pomyślnym pobraniu i przetworzeniu listy stacji. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stations} & Lista obiektów \doxylink{struct_station_info}{Station\+Info} zawierająca dane stacji. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{giosapiclient_8h}{giosapiclient.\+h}}\item 
+build/\+Desktop\+\_\+\+Qt\+\_\+6\+\_\+7\+\_\+3\+\_\+\+Min\+GW\+\_\+64\+\_\+bit-\/\+Debug/\+Air\+Quality\+Monitoring\+\_\+autogen/\+EWIEGA46\+WW/moc\+\_\+giosapiclient.\+cpp\item 
+giosapiclient.\+cpp\end{DoxyCompactItemize}

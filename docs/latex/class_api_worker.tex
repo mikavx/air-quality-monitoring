@@ -1,0 +1,78 @@
+\doxysection{Api\+Worker Class Reference}
+\hypertarget{class_api_worker}{}\label{class_api_worker}\index{ApiWorker@{ApiWorker}}
+Inheritance diagram for Api\+Worker\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_api_worker}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_api_worker_a7ea935ac019fbc4222dff3bb513c7bd1}\label{class_api_worker_a7ea935ac019fbc4222dff3bb513c7bd1} 
+void {\bfseries do\+Fetch\+All\+Stations} ()
+\item 
+\Hypertarget{class_api_worker_ada1ae2220fbe2e97ea2f1a1ed7a8b3b3}\label{class_api_worker_ada1ae2220fbe2e97ea2f1a1ed7a8b3b3} 
+void {\bfseries do\+Fetch\+Sensors\+For\+Station} (int station\+Id)
+\item 
+\Hypertarget{class_api_worker_ad4cabea488c45cd31a133ac4df770de5}\label{class_api_worker_ad4cabea488c45cd31a133ac4df770de5} 
+void {\bfseries do\+Fetch\+Measurement\+Data} (int sensor\+Id)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_api_worker_a90d8d16a314d8d08f420a335a5baef86}\label{class_api_worker_a90d8d16a314d8d08f420a335a5baef86} 
+void {\bfseries stations\+Ready} (const QList$<$ \mbox{\hyperlink{struct_station_info}{Station\+Info}} $>$ \&stations)
+\item 
+\Hypertarget{class_api_worker_a8c1b2ebe4077272f0edac0f42acbdae7}\label{class_api_worker_a8c1b2ebe4077272f0edac0f42acbdae7} 
+void {\bfseries sensors\+Ready} (const QList$<$ \mbox{\hyperlink{struct_sensor_info}{Sensor\+Info}} $>$ \&sensors)
+\item 
+\Hypertarget{class_api_worker_a770a929f1a554e33018b7b3c8f71d494}\label{class_api_worker_a770a929f1a554e33018b7b3c8f71d494} 
+void {\bfseries measurement\+Data\+Ready} (const \mbox{\hyperlink{struct_measurement_data}{Measurement\+Data}} \&data)
+\item 
+\Hypertarget{class_api_worker_abb776ad7b8685c0f10c55886746b2d03}\label{class_api_worker_abb776ad7b8685c0f10c55886746b2d03} 
+void {\bfseries error\+Occurred} (const QString \&error\+String)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_api_worker_a02e221dcc10d69071adb69749e3e5ae6}\label{class_api_worker_a02e221dcc10d69071adb69749e3e5ae6} 
+{\bfseries Api\+Worker} (QObject \texorpdfstring{$\ast$}{*}parent=nullptr)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Slots}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_api_worker_a48ee3f6248d29f470a7e58cc51ac7e39}\label{class_api_worker_a48ee3f6248d29f470a7e58cc51ac7e39} 
+void {\bfseries on\+Fetch\+Stations\+Finished} (QNetwork\+Reply \texorpdfstring{$\ast$}{*}reply)
+\item 
+\Hypertarget{class_api_worker_a891771563e8b1569204e880f16c8cec1}\label{class_api_worker_a891771563e8b1569204e880f16c8cec1} 
+void {\bfseries on\+Fetch\+Sensors\+Finished} (QNetwork\+Reply \texorpdfstring{$\ast$}{*}reply)
+\item 
+\Hypertarget{class_api_worker_afc7f888b27aa88004a6d1011b8ad1692}\label{class_api_worker_afc7f888b27aa88004a6d1011b8ad1692} 
+void {\bfseries on\+Fetch\+Measurement\+Data\+Finished} (QNetwork\+Reply \texorpdfstring{$\ast$}{*}reply)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_api_worker_acbb1225588c2af8e1c48e9e7e1e73f6e}\label{class_api_worker_acbb1225588c2af8e1c48e9e7e1e73f6e} 
+void {\bfseries parse\+Stations\+Json} (const QByte\+Array \&json\+Data)
+\item 
+\Hypertarget{class_api_worker_a358828a904b457506f2e4583aba2271d}\label{class_api_worker_a358828a904b457506f2e4583aba2271d} 
+void {\bfseries parse\+Sensors\+Json} (const QByte\+Array \&json\+Data, int station\+Id)
+\item 
+\Hypertarget{class_api_worker_a8c555b2856cf91d63d29122cf3b1b7e2}\label{class_api_worker_a8c555b2856cf91d63d29122cf3b1b7e2} 
+void {\bfseries parse\+Measurement\+Data\+Json} (const QByte\+Array \&json\+Data)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_api_worker_a55b959c427db0a6c9d8618e91ae882d8}\label{class_api_worker_a55b959c427db0a6c9d8618e91ae882d8} 
+QNetwork\+Access\+Manager \texorpdfstring{$\ast$}{*} {\bfseries network\+Manager}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+apiworker.\+h\item 
+apiworker.\+cpp\item 
+build/\+Desktop\+\_\+\+Qt\+\_\+6\+\_\+7\+\_\+3\+\_\+\+Min\+GW\+\_\+64\+\_\+bit-\/\+Debug/\+Air\+Quality\+Monitoring\+\_\+autogen/\+EWIEGA46\+WW/moc\+\_\+apiworker.\+cpp\end{DoxyCompactItemize}

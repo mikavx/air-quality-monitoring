@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>mainWindow</class>
+ <widget class="QMainWindow" name="mainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1056</width>
+    <height>390</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/* --- Styl dla Głównego Okna (Tło) --- */
+QMainWindow {
+    background-color: #5e3c75; 
+}
+
+/* --- Styl dla Centralnego Widgetu --- */
+QWidget#centralwidget {
+    background-color: #e6d8f3;  
+}
+
+/* --- Styl dla Przycisków --- */
+QPushButton {
+    background-color: #a86dbf;  
+    color: #ffffff;
+    border: 2px solid #50325d; 
+    border-radius: 8px;
+    padding: 5px 10px;
+    font-weight: bold;
+    font-family: &quot;Verdana&quot;, Arial, sans-serif;
+}
+
+QPushButton:hover {
+    background-color: #6e4e93; 
+    border-color: #3f2b57;    
+}
+
+QPushButton:pressed {
+    background-color: #50325d; 
+    border-style: inset;
+    border-color: #3a2247;
+}
+
+QPushButton:disabled {
+    background-color: #a6b4e2; 
+    color: #e7d8f3;
+    border-color: #b0c4de;
+}
+
+/* --- Styl dla Etykiet Tekstowych --- */
+QLabel {
+    color: #50325d; 
+    font-weight: bold;
+    font-size: 10pt;
+    padding: 2px;
+	font-family: &quot;Verdana&quot;, Arial, sans-serif;
+    qproperty-alignment: 'AlignCenter';
+}
+
+/* --- Styl dla Konkretnych Etykiet --- */
+QLabel#analysisResultsLabel {
+    color: #50325d;
+    font-weight: normal;
+    font-size: 9pt;
+    border: 1px solid #8966b1;
+    background-color: #f2f8fd;
+    padding: 5px;
+}
+
+/* --- Styl dla Pola Wprowadzania (Filtra) --- */
+QLineEdit {
+    border: 1px solid #8966b1;
+    border-radius: 5px;
+    padding: 3px 5px; 
+    background-color: #f4f9fd;
+    font-family: &quot;Verdana&quot;, Arial, sans-serif;
+    font-size: 10pt;
+    color: #50325d;
+    font-weight: bold;
+}
+
+QLineEdit:focus {
+    border-color: #50325d;
+}
+
+/* --- Styl dla List --- */
+QListWidget {
+    border: 1px solid #8966b1;
+    background-color: #ffffff;
+    font-size: 10pt;
+    color: #50325d;
+	font-family: &quot;Verdana&quot;, Arial, sans-serif;
+}
+
+/* --- Styl dla Pól Tekstowych (Wyniki, Dane) --- */
+QTextEdit {
+    border: 1px solid #8966b1;
+    background-color: #ffffff;
+    font-family: &quot;Verdana&quot;, Arial, sans-serif;
+    font-size: 9pt;
+    color: #50325d;
+}
+
+/* --- Styl dla Wykresu (Usunięcie Ramki) --- */
+QChartView {
+    border: none; 
+    background-color: #ffffff;
+}
+
+/* --- Styl dla Paska Statusu (Opcjonalnie) --- */
+QStatusBar {
+    background-color: #50325d;
+    color: #f4f4f4;
+    font-family: &quot;Verdana&quot;, Arial, sans-serif;
+}
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="2" column="0" colspan="4">
+     <widget class="QChartView" name="chartView" native="true">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1" colspan="2">
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QPushButton" name="loadDataButton">
+        <property name="text">
+         <string>Wczytaj dane</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="saveDataButton">
+        <property name="text">
+         <string>Zapisz dane</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="1" column="2">
+     <layout class="QVBoxLayout" name="verticalLayout_4">
+      <item>
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>Dane pomiarowe</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QTextEdit" name="measurementDataTextEdit">
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="1" column="1">
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <widget class="QLabel" name="label_2">
+        <property name="text">
+         <string>Dostępne sensory</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QListWidget" name="sensorsListWidget"/>
+      </item>
+     </layout>
+    </item>
+    <item row="0" column="3" rowspan="2">
+     <layout class="QVBoxLayout" name="verticalLayout_3">
+      <item>
+       <widget class="QPushButton" name="analyzeButton">
+        <property name="text">
+         <string>Analizuj dane</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QTextEdit" name="analysisResultsTextEdit">
+        <property name="contextMenuPolicy">
+         <enum>Qt::ContextMenuPolicy::NoContextMenu</enum>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="0" column="0" rowspan="2">
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QPushButton" name="fetchStationsButton">
+        <property name="text">
+         <string>Pobierz stacje</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="cityFilterLineEdit">
+        <property name="placeholderText">
+         <string>Wpisz miejscowość...</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QListWidget" name="listWidget"/>
+      </item>
+      <item>
+       <widget class="QLabel" name="selectedStationLabel">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1056</width>
+     <height>17</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QChartView</class>
+   <extends>QWidget</extends>
+   <header>qchartview.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

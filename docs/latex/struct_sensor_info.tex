@@ -1,0 +1,41 @@
+\doxysection{Sensor\+Info Struct Reference}
+\hypertarget{struct_sensor_info}{}\label{struct_sensor_info}\index{SensorInfo@{SensorInfo}}
+
+
+Przechowuje informacje o pojedynczym sensorze (stanowisku pomiarowym) na stacji.  
+
+
+
+
+{\ttfamily \#include $<$giosapiclient.\+h$>$}
+
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{struct_sensor_info_ac55cc3e69e4bfb30dbd1f95faba4c2e2}\label{struct_sensor_info_ac55cc3e69e4bfb30dbd1f95faba4c2e2} 
+int {\bfseries id} = -\/1
+\begin{DoxyCompactList}\small\item\em Unikalne ID sensora (stanowiska pomiarowego). \end{DoxyCompactList}\item 
+\Hypertarget{struct_sensor_info_a72ec03042539948c0a791435c9f369c8}\label{struct_sensor_info_a72ec03042539948c0a791435c9f369c8} 
+int {\bfseries station\+Id} = -\/1
+\begin{DoxyCompactList}\small\item\em ID stacji GIOŚ, do której przypisany jest sensor. \end{DoxyCompactList}\item 
+\Hypertarget{struct_sensor_info_acf5b49f4fe24beb145966c8bb5e9ffe8}\label{struct_sensor_info_acf5b49f4fe24beb145966c8bb5e9ffe8} 
+QString {\bfseries param\+Name}
+\begin{DoxyCompactList}\small\item\em Pełna nazwa mierzonego parametru (np. "{}\+Dwutlenek azotu"{}). \end{DoxyCompactList}\item 
+\Hypertarget{struct_sensor_info_a0663d00f8428d15709438c7518f67af1}\label{struct_sensor_info_a0663d00f8428d15709438c7518f67af1} 
+QString {\bfseries param\+Formula}
+\begin{DoxyCompactList}\small\item\em Wzór chemiczny lub symbol parametru (np. "{}\+NO2"{}). \end{DoxyCompactList}\item 
+\Hypertarget{struct_sensor_info_a0a92fab99949810f8afda5c435b6cfde}\label{struct_sensor_info_a0a92fab99949810f8afda5c435b6cfde} 
+QString {\bfseries param\+Code}
+\begin{DoxyCompactList}\small\item\em Krótki kod identyfikujący parametr (np. "{}\+NO2"{}). \end{DoxyCompactList}\item 
+\Hypertarget{struct_sensor_info_af0e1b23f88e360f29f056c4069d26494}\label{struct_sensor_info_af0e1b23f88e360f29f056c4069d26494} 
+int {\bfseries id\+Param} = -\/1
+\begin{DoxyCompactList}\small\item\em Wewnętrzne ID parametru w systemie GIOŚ. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Przechowuje informacje o pojedynczym sensorze (stanowisku pomiarowym) na stacji. 
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+apiworker.\+h\item 
+\mbox{\hyperlink{giosapiclient_8h}{giosapiclient.\+h}}\end{DoxyCompactItemize}

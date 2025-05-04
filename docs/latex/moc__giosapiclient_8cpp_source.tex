@@ -1,0 +1,246 @@
+\doxysection{moc\+\_\+giosapiclient.\+cpp}
+\hypertarget{moc__giosapiclient_8cpp_source}{}\label{moc__giosapiclient_8cpp_source}\index{build/Desktop\_Qt\_6\_7\_3\_MinGW\_64\_bit-\/Debug/AirQualityMonitoring\_autogen/EWIEGA46WW/moc\_giosapiclient.cpp@{build/Desktop\_Qt\_6\_7\_3\_MinGW\_64\_bit-\/Debug/AirQualityMonitoring\_autogen/EWIEGA46WW/moc\_giosapiclient.cpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/****************************************************************************}}
+\DoxyCodeLine{00002\ \textcolor{comment}{**\ Meta\ object\ code\ from\ reading\ C++\ file\ 'giosapiclient.h'}}
+\DoxyCodeLine{00003\ \textcolor{comment}{**}}
+\DoxyCodeLine{00004\ \textcolor{comment}{**\ Created\ by:\ The\ Qt\ Meta\ Object\ Compiler\ version\ 68\ (Qt\ 6.7.3)}}
+\DoxyCodeLine{00005\ \textcolor{comment}{**}}
+\DoxyCodeLine{00006\ \textcolor{comment}{**\ WARNING!\ All\ changes\ made\ in\ this\ file\ will\ be\ lost!}}
+\DoxyCodeLine{00007\ \textcolor{comment}{*****************************************************************************/}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{giosapiclient_8h}{../../../../giosapiclient.h}}"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <QtCore/qmetatype.h>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <QtCore/QList>}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <QtCore/qtmochelpers.h>}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#include\ <QtCore/qxptype\_traits.h>}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#if\ !defined(Q\_MOC\_OUTPUT\_REVISION)}}
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#error\ "{}The\ header\ file\ 'giosapiclient.h'\ doesn't\ include\ <QObject>."{}}}
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\#elif\ Q\_MOC\_OUTPUT\_REVISION\ !=\ 68}}
+\DoxyCodeLine{00022\ \textcolor{preprocessor}{\#error\ "{}This\ file\ was\ generated\ using\ the\ moc\ from\ 6.7.3.\ It"{}}}
+\DoxyCodeLine{00023\ \textcolor{preprocessor}{\#error\ "{}cannot\ be\ used\ with\ the\ include\ files\ from\ this\ version\ of\ Qt."{}}}
+\DoxyCodeLine{00024\ \textcolor{preprocessor}{\#error\ "{}(The\ moc\ has\ changed\ too\ much.)"{}}}
+\DoxyCodeLine{00025\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \textcolor{preprocessor}{\#ifndef\ Q\_CONSTINIT}}
+\DoxyCodeLine{00028\ \textcolor{preprocessor}{\#define\ Q\_CONSTINIT}}
+\DoxyCodeLine{00029\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ QT\_WARNING\_PUSH}
+\DoxyCodeLine{00032\ QT\_WARNING\_DISABLE\_DEPRECATED}
+\DoxyCodeLine{00033\ QT\_WARNING\_DISABLE\_GCC(\textcolor{stringliteral}{"{}-\/Wuseless-\/cast"{}})}
+\DoxyCodeLine{00034\ namespace\ \{}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \textcolor{preprocessor}{\#ifdef\ QT\_MOC\_HAS\_STRINGDATA}}
+\DoxyCodeLine{00037\ \textcolor{keyword}{struct\ }qt\_meta\_stringdata\_CLASSGiosApiClientENDCLASS\_t\ \{\};}
+\DoxyCodeLine{00038\ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{auto}\ qt\_meta\_stringdata\_CLASSGiosApiClientENDCLASS\ =\ QtMocHelpers::stringData(}
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{stringliteral}{"{}GiosApiClient"{}},}
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{stringliteral}{"{}stationsFetched"{}},}
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{stringliteral}{"{}"{}},}
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{stringliteral}{"{}QList<StationInfo>"{}},}
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{stringliteral}{"{}stations"{}},}
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{stringliteral}{"{}sensorsFetched"{}},}
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{stringliteral}{"{}QList<SensorInfo>"{}},}
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{stringliteral}{"{}sensors"{}},}
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{stringliteral}{"{}measurementDataFetched"{}},}
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{stringliteral}{"{}MeasurementData"{}},}
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{stringliteral}{"{}data"{}},}
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{stringliteral}{"{}networkError"{}},}
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{stringliteral}{"{}errorString"{}},}
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{stringliteral}{"{}onFetchStationsFinished"{}},}
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{stringliteral}{"{}QNetworkReply*"{}},}
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{stringliteral}{"{}reply"{}},}
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{stringliteral}{"{}onFetchSensorsFinished"{}},}
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{stringliteral}{"{}onFetchMeasurementDataFinished"{}}}
+\DoxyCodeLine{00057\ );}
+\DoxyCodeLine{00058\ \textcolor{preprocessor}{\#else\ \ }\textcolor{comment}{//\ !QT\_MOC\_HAS\_STRINGDATA}}
+\DoxyCodeLine{00059\ \textcolor{preprocessor}{\#error\ "{}qtmochelpers.h\ not\ found\ or\ too\ old."{}}}
+\DoxyCodeLine{00060\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ !QT\_MOC\_HAS\_STRINGDATA}}
+\DoxyCodeLine{00061\ \}\ \textcolor{comment}{//\ unnamed\ namespace}}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00063\ Q\_CONSTINIT\ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ uint\ qt\_meta\_data\_CLASSGiosApiClientENDCLASS[]\ =\ \{}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00065\ \ \textcolor{comment}{//\ content:}}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ 12,\ \ \ \ \ \ \ \textcolor{comment}{//\ revision}}
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ 0,\ \ \ \ \ \ \ \textcolor{comment}{//\ classname}}
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ 0,\ \ \ \ 0,\ \textcolor{comment}{//\ classinfo}}
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ 7,\ \ \ 14,\ \textcolor{comment}{//\ methods}}
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ 0,\ \ \ \ 0,\ \textcolor{comment}{//\ properties}}
+\DoxyCodeLine{00071\ \ \ \ \ \ \ \ 0,\ \ \ \ 0,\ \textcolor{comment}{//\ enums/sets}}
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ 0,\ \ \ \ 0,\ \textcolor{comment}{//\ constructors}}
+\DoxyCodeLine{00073\ \ \ \ \ \ \ \ 0,\ \ \ \ \ \ \ \textcolor{comment}{//\ flags}}
+\DoxyCodeLine{00074\ \ \ \ \ \ \ \ 4,\ \ \ \ \ \ \ \textcolor{comment}{//\ signalCount}}
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00076\ \ \textcolor{comment}{//\ signals:\ name,\ argc,\ parameters,\ tag,\ flags,\ initial\ metatype\ offsets}}
+\DoxyCodeLine{00077\ \ \ \ \ \ \ \ 1,\ \ \ \ 1,\ \ \ 56,\ \ \ \ 2,\ 0x06,\ \ \ \ 1\ \textcolor{comment}{/*\ Public\ */},}
+\DoxyCodeLine{00078\ \ \ \ \ \ \ \ 5,\ \ \ \ 1,\ \ \ 59,\ \ \ \ 2,\ 0x06,\ \ \ \ 3\ \textcolor{comment}{/*\ Public\ */},}
+\DoxyCodeLine{00079\ \ \ \ \ \ \ \ 8,\ \ \ \ 1,\ \ \ 62,\ \ \ \ 2,\ 0x06,\ \ \ \ 5\ \textcolor{comment}{/*\ Public\ */},}
+\DoxyCodeLine{00080\ \ \ \ \ \ \ 11,\ \ \ \ 1,\ \ \ 65,\ \ \ \ 2,\ 0x06,\ \ \ \ 7\ \textcolor{comment}{/*\ Public\ */},}
+\DoxyCodeLine{00081\ }
+\DoxyCodeLine{00082\ \ \textcolor{comment}{//\ slots:\ name,\ argc,\ parameters,\ tag,\ flags,\ initial\ metatype\ offsets}}
+\DoxyCodeLine{00083\ \ \ \ \ \ \ 13,\ \ \ \ 1,\ \ \ 68,\ \ \ \ 2,\ 0x08,\ \ \ \ 9\ \textcolor{comment}{/*\ Private\ */},}
+\DoxyCodeLine{00084\ \ \ \ \ \ \ 16,\ \ \ \ 1,\ \ \ 71,\ \ \ \ 2,\ 0x08,\ \ \ 11\ \textcolor{comment}{/*\ Private\ */},}
+\DoxyCodeLine{00085\ \ \ \ \ \ \ 17,\ \ \ \ 1,\ \ \ 74,\ \ \ \ 2,\ 0x08,\ \ \ 13\ \textcolor{comment}{/*\ Private\ */},}
+\DoxyCodeLine{00086\ }
+\DoxyCodeLine{00087\ \ \textcolor{comment}{//\ signals:\ parameters}}
+\DoxyCodeLine{00088\ \ \ \ \ QMetaType::Void,\ 0x80000000\ |\ 3,\ \ \ \ 4,}
+\DoxyCodeLine{00089\ \ \ \ \ QMetaType::Void,\ 0x80000000\ |\ 6,\ \ \ \ 7,}
+\DoxyCodeLine{00090\ \ \ \ \ QMetaType::Void,\ 0x80000000\ |\ 9,\ \ \ 10,}
+\DoxyCodeLine{00091\ \ \ \ \ QMetaType::Void,\ QMetaType::QString,\ \ \ 12,}
+\DoxyCodeLine{00092\ }
+\DoxyCodeLine{00093\ \ \textcolor{comment}{//\ slots:\ parameters}}
+\DoxyCodeLine{00094\ \ \ \ \ QMetaType::Void,\ 0x80000000\ |\ 14,\ \ \ 15,}
+\DoxyCodeLine{00095\ \ \ \ \ QMetaType::Void,\ 0x80000000\ |\ 14,\ \ \ 15,}
+\DoxyCodeLine{00096\ \ \ \ \ QMetaType::Void,\ 0x80000000\ |\ 14,\ \ \ 15,}
+\DoxyCodeLine{00097\ }
+\DoxyCodeLine{00098\ \ \ \ \ \ \ \ 0\ \ \ \ \ \ \ \ \textcolor{comment}{//\ eod}}
+\DoxyCodeLine{00099\ \};}
+\DoxyCodeLine{00100\ }
+\DoxyCodeLine{00101\ Q\_CONSTINIT\ \textcolor{keyword}{const}\ QMetaObject\ GiosApiClient::staticMetaObject\ =\ \{\ \{}
+\DoxyCodeLine{00102\ \ \ \ \ QMetaObject::SuperData::link<QObject::staticMetaObject>(),}
+\DoxyCodeLine{00103\ \ \ \ \ qt\_meta\_stringdata\_CLASSGiosApiClientENDCLASS.offsetsAndSizes,}
+\DoxyCodeLine{00104\ \ \ \ \ qt\_meta\_data\_CLASSGiosApiClientENDCLASS,}
+\DoxyCodeLine{00105\ \ \ \ \ qt\_static\_metacall,}
+\DoxyCodeLine{00106\ \ \ \ \ \textcolor{keyword}{nullptr},}
+\DoxyCodeLine{00107\ \ \ \ \ qt\_incomplete\_metaTypeArray<qt\_meta\_stringdata\_CLASSGiosApiClientENDCLASS\_t,}
+\DoxyCodeLine{00108\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Q\_OBJECT\ /\ Q\_GADGET}}
+\DoxyCodeLine{00109\ \ \ \ \ \ \ \ \ QtPrivate::TypeAndForceComplete<GiosApiClient,\ std::true\_type>,}
+\DoxyCodeLine{00110\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ method\ 'stationsFetched'}}
+\DoxyCodeLine{00111\ \ \ \ \ \ \ \ \ QtPrivate::TypeAndForceComplete<void,\ std::false\_type>,}
+\DoxyCodeLine{00112\ \ \ \ \ \ \ \ \ QtPrivate::TypeAndForceComplete<const\ QList<StationInfo>\ \&,\ std::false\_type>,}
+\DoxyCodeLine{00113\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ method\ 'sensorsFetched'}}
+\DoxyCodeLine{00114\ \ \ \ \ \ \ \ \ QtPrivate::TypeAndForceComplete<void,\ std::false\_type>,}
+\DoxyCodeLine{00115\ \ \ \ \ \ \ \ \ QtPrivate::TypeAndForceComplete<const\ QList<SensorInfo>\ \&,\ std::false\_type>,}
+\DoxyCodeLine{00116\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ method\ 'measurementDataFetched'}}
+\DoxyCodeLine{00117\ \ \ \ \ \ \ \ \ QtPrivate::TypeAndForceComplete<void,\ std::false\_type>,}
+\DoxyCodeLine{00118\ \ \ \ \ \ \ \ \ QtPrivate::TypeAndForceComplete<const\ MeasurementData\ \&,\ std::false\_type>,}
+\DoxyCodeLine{00119\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ method\ 'networkError'}}
+\DoxyCodeLine{00120\ \ \ \ \ \ \ \ \ QtPrivate::TypeAndForceComplete<void,\ std::false\_type>,}
+\DoxyCodeLine{00121\ \ \ \ \ \ \ \ \ QtPrivate::TypeAndForceComplete<const\ QString\ \&,\ std::false\_type>,}
+\DoxyCodeLine{00122\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ method\ 'onFetchStationsFinished'}}
+\DoxyCodeLine{00123\ \ \ \ \ \ \ \ \ QtPrivate::TypeAndForceComplete<void,\ std::false\_type>,}
+\DoxyCodeLine{00124\ \ \ \ \ \ \ \ \ QtPrivate::TypeAndForceComplete<QNetworkReply\ *,\ std::false\_type>,}
+\DoxyCodeLine{00125\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ method\ 'onFetchSensorsFinished'}}
+\DoxyCodeLine{00126\ \ \ \ \ \ \ \ \ QtPrivate::TypeAndForceComplete<void,\ std::false\_type>,}
+\DoxyCodeLine{00127\ \ \ \ \ \ \ \ \ QtPrivate::TypeAndForceComplete<QNetworkReply\ *,\ std::false\_type>,}
+\DoxyCodeLine{00128\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ method\ 'onFetchMeasurementDataFinished'}}
+\DoxyCodeLine{00129\ \ \ \ \ \ \ \ \ QtPrivate::TypeAndForceComplete<void,\ std::false\_type>,}
+\DoxyCodeLine{00130\ \ \ \ \ \ \ \ \ QtPrivate::TypeAndForceComplete<QNetworkReply\ *,\ std::false\_type>}
+\DoxyCodeLine{00131\ \ \ \ \ >,}
+\DoxyCodeLine{00132\ \ \ \ \ \textcolor{keyword}{nullptr}}
+\DoxyCodeLine{00133\ \}\ \};}
+\DoxyCodeLine{00134\ }
+\DoxyCodeLine{00135\ \textcolor{keywordtype}{void}\ GiosApiClient::qt\_static\_metacall(QObject\ *\_o,\ QMetaObject::Call\ \_c,\ \textcolor{keywordtype}{int}\ \_id,\ \textcolor{keywordtype}{void}\ **\_a)}
+\DoxyCodeLine{00136\ \{}
+\DoxyCodeLine{00137\ \ \ \ \ \textcolor{keywordflow}{if}\ (\_c\ ==\ QMetaObject::InvokeMetaMethod)\ \{}
+\DoxyCodeLine{00138\ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ *\_t\ =\ \textcolor{keyword}{static\_cast<}\mbox{\hyperlink{class_gios_api_client_aa8c21ee53825fb5eb4abd76250dd7737}{GiosApiClient}}\ *\textcolor{keyword}{>}(\_o);}
+\DoxyCodeLine{00139\ \ \ \ \ \ \ \ \ (void)\_t;}
+\DoxyCodeLine{00140\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{switch}\ (\_id)\ \{}
+\DoxyCodeLine{00141\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ 0:\ \_t-\/>stationsFetched((*\textcolor{keyword}{reinterpret\_cast<}\ std::add\_pointer\_t<QList<StationInfo>\textcolor{keyword}{>}>(\_a[1])));\ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00142\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ 1:\ \_t-\/>sensorsFetched((*\textcolor{keyword}{reinterpret\_cast<}\ std::add\_pointer\_t<QList<SensorInfo>\textcolor{keyword}{>}>(\_a[1])));\ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00143\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ 2:\ \_t-\/>measurementDataFetched((*\textcolor{keyword}{reinterpret\_cast<}\ std::add\_pointer\_t<MeasurementData>\textcolor{keyword}{>}(\_a[1])));\ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00144\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ 3:\ \_t-\/>networkError((*\textcolor{keyword}{reinterpret\_cast<}\ std::add\_pointer\_t<QString>\textcolor{keyword}{>}(\_a[1])));\ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00145\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ 4:\ \_t-\/>onFetchStationsFinished((*\textcolor{keyword}{reinterpret\_cast<}\ std::add\_pointer\_t<QNetworkReply*>\textcolor{keyword}{>}(\_a[1])));\ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00146\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ 5:\ \_t-\/>onFetchSensorsFinished((*\textcolor{keyword}{reinterpret\_cast<}\ std::add\_pointer\_t<QNetworkReply*>\textcolor{keyword}{>}(\_a[1])));\ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00147\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ 6:\ \_t-\/>onFetchMeasurementDataFinished((*\textcolor{keyword}{reinterpret\_cast<}\ std::add\_pointer\_t<QNetworkReply*>\textcolor{keyword}{>}(\_a[1])));\ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00148\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{default}:\ ;}
+\DoxyCodeLine{00149\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00150\ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (\_c\ ==\ QMetaObject::IndexOfMethod)\ \{}
+\DoxyCodeLine{00151\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ *result\ =\ \textcolor{keyword}{reinterpret\_cast<}\textcolor{keywordtype}{int}\ *\textcolor{keyword}{>}(\_a[0]);}
+\DoxyCodeLine{00152\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00153\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{using\ }\_t\ =\ void\ (\mbox{\hyperlink{class_gios_api_client_aa8c21ee53825fb5eb4abd76250dd7737}{GiosApiClient}}::*)(\textcolor{keyword}{const}\ QList<StationInfo>\ \&\ );}
+\DoxyCodeLine{00154\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\_t\ \_q\_method\ =\ \&\mbox{\hyperlink{class_gios_api_client_ae921aff93ea2c7cfc6ebf01bd27b7926}{GiosApiClient::stationsFetched}};\ *\textcolor{keyword}{reinterpret\_cast<}\_t\ *\textcolor{keyword}{>}(\_a[1])\ ==\ \_q\_method)\ \{}
+\DoxyCodeLine{00155\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ *result\ =\ 0;}
+\DoxyCodeLine{00156\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{00157\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00158\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00159\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00160\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{using\ }\_t\ =\ void\ (\mbox{\hyperlink{class_gios_api_client_aa8c21ee53825fb5eb4abd76250dd7737}{GiosApiClient}}::*)(\textcolor{keyword}{const}\ QList<SensorInfo>\ \&\ );}
+\DoxyCodeLine{00161\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\_t\ \_q\_method\ =\ \&\mbox{\hyperlink{class_gios_api_client_a3cc6c05223490cd0f0dc2bc744d22791}{GiosApiClient::sensorsFetched}};\ *\textcolor{keyword}{reinterpret\_cast<}\_t\ *\textcolor{keyword}{>}(\_a[1])\ ==\ \_q\_method)\ \{}
+\DoxyCodeLine{00162\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ *result\ =\ 1;}
+\DoxyCodeLine{00163\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{00164\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00165\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00166\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00167\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{using\ }\_t\ =\ void\ (\mbox{\hyperlink{class_gios_api_client_aa8c21ee53825fb5eb4abd76250dd7737}{GiosApiClient}}::*)(\textcolor{keyword}{const}\ MeasurementData\ \&\ );}
+\DoxyCodeLine{00168\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\_t\ \_q\_method\ =\ \&\mbox{\hyperlink{class_gios_api_client_a66c096381cb24411b101e05673677ac5}{GiosApiClient::measurementDataFetched}};\ *\textcolor{keyword}{reinterpret\_cast<}\_t\ *\textcolor{keyword}{>}(\_a[1])\ ==\ \_q\_method)\ \{}
+\DoxyCodeLine{00169\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ *result\ =\ 2;}
+\DoxyCodeLine{00170\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{00171\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00172\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00173\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00174\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{using\ }\_t\ =\ void\ (\mbox{\hyperlink{class_gios_api_client_aa8c21ee53825fb5eb4abd76250dd7737}{GiosApiClient}}::*)(\textcolor{keyword}{const}\ QString\ \&\ );}
+\DoxyCodeLine{00175\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\_t\ \_q\_method\ =\ \&\mbox{\hyperlink{class_gios_api_client_a072888624c81ce529e4c6b6a0d52e3b9}{GiosApiClient::networkError}};\ *\textcolor{keyword}{reinterpret\_cast<}\_t\ *\textcolor{keyword}{>}(\_a[1])\ ==\ \_q\_method)\ \{}
+\DoxyCodeLine{00176\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ *result\ =\ 3;}
+\DoxyCodeLine{00177\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{00178\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00179\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00180\ \ \ \ \ \}}
+\DoxyCodeLine{00181\ \}}
+\DoxyCodeLine{00182\ }
+\DoxyCodeLine{00183\ \textcolor{keyword}{const}\ QMetaObject\ *GiosApiClient::metaObject()\textcolor{keyword}{\ const}}
+\DoxyCodeLine{00184\ \textcolor{keyword}{}\{}
+\DoxyCodeLine{00185\ \ \ \ \ \textcolor{keywordflow}{return}\ QObject::d\_ptr-\/>metaObject\ ?\ QObject::d\_ptr-\/>dynamicMetaObject()\ :\ \&staticMetaObject;}
+\DoxyCodeLine{00186\ \}}
+\DoxyCodeLine{00187\ }
+\DoxyCodeLine{00188\ \textcolor{keywordtype}{void}\ *GiosApiClient::qt\_metacast(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *\_clname)}
+\DoxyCodeLine{00189\ \{}
+\DoxyCodeLine{00190\ \ \ \ \ \textcolor{keywordflow}{if}\ (!\_clname)\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00191\ \ \ \ \ \textcolor{keywordflow}{if}\ (!strcmp(\_clname,\ qt\_meta\_stringdata\_CLASSGiosApiClientENDCLASS.stringdata0))}
+\DoxyCodeLine{00192\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{void}*\textcolor{keyword}{>}(\textcolor{keyword}{this});}
+\DoxyCodeLine{00193\ \ \ \ \ \textcolor{keywordflow}{return}\ QObject::qt\_metacast(\_clname);}
+\DoxyCodeLine{00194\ \}}
+\DoxyCodeLine{00195\ }
+\DoxyCodeLine{00196\ \textcolor{keywordtype}{int}\ GiosApiClient::qt\_metacall(QMetaObject::Call\ \_c,\ \textcolor{keywordtype}{int}\ \_id,\ \textcolor{keywordtype}{void}\ **\_a)}
+\DoxyCodeLine{00197\ \{}
+\DoxyCodeLine{00198\ \ \ \ \ \_id\ =\ QObject::qt\_metacall(\_c,\ \_id,\ \_a);}
+\DoxyCodeLine{00199\ \ \ \ \ \textcolor{keywordflow}{if}\ (\_id\ <\ 0)}
+\DoxyCodeLine{00200\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \_id;}
+\DoxyCodeLine{00201\ \ \ \ \ \textcolor{keywordflow}{if}\ (\_c\ ==\ QMetaObject::InvokeMetaMethod)\ \{}
+\DoxyCodeLine{00202\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\_id\ <\ 7)}
+\DoxyCodeLine{00203\ \ \ \ \ \ \ \ \ \ \ \ \ qt\_static\_metacall(\textcolor{keyword}{this},\ \_c,\ \_id,\ \_a);}
+\DoxyCodeLine{00204\ \ \ \ \ \ \ \ \ \_id\ -\/=\ 7;}
+\DoxyCodeLine{00205\ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (\_c\ ==\ QMetaObject::RegisterMethodArgumentMetaType)\ \{}
+\DoxyCodeLine{00206\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\_id\ <\ 7)}
+\DoxyCodeLine{00207\ \ \ \ \ \ \ \ \ \ \ \ \ *\textcolor{keyword}{reinterpret\_cast<}QMetaType\ *\textcolor{keyword}{>}(\_a[0])\ =\ QMetaType();}
+\DoxyCodeLine{00208\ \ \ \ \ \ \ \ \ \_id\ -\/=\ 7;}
+\DoxyCodeLine{00209\ \ \ \ \ \}}
+\DoxyCodeLine{00210\ \ \ \ \ \textcolor{keywordflow}{return}\ \_id;}
+\DoxyCodeLine{00211\ \}}
+\DoxyCodeLine{00212\ }
+\DoxyCodeLine{00213\ \textcolor{comment}{//\ SIGNAL\ 0}}
+\DoxyCodeLine{00214\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_gios_api_client_ae921aff93ea2c7cfc6ebf01bd27b7926}{GiosApiClient::stationsFetched}}(\textcolor{keyword}{const}\ QList<StationInfo>\ \&\ \_t1)}
+\DoxyCodeLine{00215\ \{}
+\DoxyCodeLine{00216\ \ \ \ \ \textcolor{keywordtype}{void}\ *\_a[]\ =\ \{\ \textcolor{keyword}{nullptr},\ \textcolor{keyword}{const\_cast<}\textcolor{keywordtype}{void}*\textcolor{keyword}{>}(\textcolor{keyword}{reinterpret\_cast<}\textcolor{keyword}{const\ }\textcolor{keywordtype}{void}*\textcolor{keyword}{>}(std::addressof(\_t1)))\ \};}
+\DoxyCodeLine{00217\ \ \ \ \ QMetaObject::activate(\textcolor{keyword}{this},\ \&staticMetaObject,\ 0,\ \_a);}
+\DoxyCodeLine{00218\ \}}
+\DoxyCodeLine{00219\ }
+\DoxyCodeLine{00220\ \textcolor{comment}{//\ SIGNAL\ 1}}
+\DoxyCodeLine{00221\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_gios_api_client_a3cc6c05223490cd0f0dc2bc744d22791}{GiosApiClient::sensorsFetched}}(\textcolor{keyword}{const}\ QList<SensorInfo>\ \&\ \_t1)}
+\DoxyCodeLine{00222\ \{}
+\DoxyCodeLine{00223\ \ \ \ \ \textcolor{keywordtype}{void}\ *\_a[]\ =\ \{\ \textcolor{keyword}{nullptr},\ \textcolor{keyword}{const\_cast<}\textcolor{keywordtype}{void}*\textcolor{keyword}{>}(\textcolor{keyword}{reinterpret\_cast<}\textcolor{keyword}{const\ }\textcolor{keywordtype}{void}*\textcolor{keyword}{>}(std::addressof(\_t1)))\ \};}
+\DoxyCodeLine{00224\ \ \ \ \ QMetaObject::activate(\textcolor{keyword}{this},\ \&staticMetaObject,\ 1,\ \_a);}
+\DoxyCodeLine{00225\ \}}
+\DoxyCodeLine{00226\ }
+\DoxyCodeLine{00227\ \textcolor{comment}{//\ SIGNAL\ 2}}
+\DoxyCodeLine{00228\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_gios_api_client_a66c096381cb24411b101e05673677ac5}{GiosApiClient::measurementDataFetched}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{struct_measurement_data}{MeasurementData}}\ \&\ \_t1)}
+\DoxyCodeLine{00229\ \{}
+\DoxyCodeLine{00230\ \ \ \ \ \textcolor{keywordtype}{void}\ *\_a[]\ =\ \{\ \textcolor{keyword}{nullptr},\ \textcolor{keyword}{const\_cast<}\textcolor{keywordtype}{void}*\textcolor{keyword}{>}(\textcolor{keyword}{reinterpret\_cast<}\textcolor{keyword}{const\ }\textcolor{keywordtype}{void}*\textcolor{keyword}{>}(std::addressof(\_t1)))\ \};}
+\DoxyCodeLine{00231\ \ \ \ \ QMetaObject::activate(\textcolor{keyword}{this},\ \&staticMetaObject,\ 2,\ \_a);}
+\DoxyCodeLine{00232\ \}}
+\DoxyCodeLine{00233\ }
+\DoxyCodeLine{00234\ \textcolor{comment}{//\ SIGNAL\ 3}}
+\DoxyCodeLine{00235\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_gios_api_client_a072888624c81ce529e4c6b6a0d52e3b9}{GiosApiClient::networkError}}(\textcolor{keyword}{const}\ QString\ \&\ \_t1)}
+\DoxyCodeLine{00236\ \{}
+\DoxyCodeLine{00237\ \ \ \ \ \textcolor{keywordtype}{void}\ *\_a[]\ =\ \{\ \textcolor{keyword}{nullptr},\ \textcolor{keyword}{const\_cast<}\textcolor{keywordtype}{void}*\textcolor{keyword}{>}(\textcolor{keyword}{reinterpret\_cast<}\textcolor{keyword}{const\ }\textcolor{keywordtype}{void}*\textcolor{keyword}{>}(std::addressof(\_t1)))\ \};}
+\DoxyCodeLine{00238\ \ \ \ \ QMetaObject::activate(\textcolor{keyword}{this},\ \&staticMetaObject,\ 3,\ \_a);}
+\DoxyCodeLine{00239\ \}}
+\DoxyCodeLine{00240\ QT\_WARNING\_POP}
+
+\end{DoxyCode}

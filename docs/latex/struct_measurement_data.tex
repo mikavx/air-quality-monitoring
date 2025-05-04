@@ -1,0 +1,29 @@
+\doxysection{Measurement\+Data Struct Reference}
+\hypertarget{struct_measurement_data}{}\label{struct_measurement_data}\index{MeasurementData@{MeasurementData}}
+
+
+Kontener na serię danych pomiarowych dla konkretnego parametru.  
+
+
+
+
+{\ttfamily \#include $<$giosapiclient.\+h$>$}
+
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{struct_measurement_data_ac64eb05d815553a394bc7703fc9ec196}\label{struct_measurement_data_ac64eb05d815553a394bc7703fc9ec196} 
+QString {\bfseries key}
+\begin{DoxyCompactList}\small\item\em Klucz (kod) identyfikujący mierzony parametr (np. "{}\+PM10"{}, "{}\+SO2"{}). \end{DoxyCompactList}\item 
+\Hypertarget{struct_measurement_data_a125a82a40bccc38e2aa50ff9c90588e0}\label{struct_measurement_data_a125a82a40bccc38e2aa50ff9c90588e0} 
+QList$<$ \mbox{\hyperlink{struct_measurement}{Measurement}} $>$ {\bfseries values}
+\begin{DoxyCompactList}\small\item\em Lista odczytów (obiektów \doxylink{struct_measurement}{Measurement}) dla tego parametru. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Kontener na serię danych pomiarowych dla konkretnego parametru. 
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+apiworker.\+h\item 
+\mbox{\hyperlink{giosapiclient_8h}{giosapiclient.\+h}}\end{DoxyCompactItemize}
